@@ -1,0 +1,16 @@
+/* https://developer.mozilla.org/en-US/ */
+#common {
+  background-color: #e6fdff;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#main_heading {
+    font-family:serif;
+    text-align: center; 
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+a {
+  color: #aa0000;
+}
