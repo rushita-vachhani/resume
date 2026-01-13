@@ -1,21 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-darkBg: #141518;
+  --color-darkCard: #242529;
+}
+
+@variant dark (&:where(.dark, .dark *));
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-darkBg text-white transition-colors duration-300;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-    "Segoe UI", sans-serif;
+  @apply bg-gray-50 text-gray-900 dark:bg-[#1a1b1e] dark:text-gray-200 transition-colors duration-300;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 .section-container {
-  @apply ml-64 px-10 py-10 min-h-screen;
+  @apply ml-[300px] px-10 py-10 min-h-screen;
 }
 
-.card-base {
-  @apply p-6 rounded-xl border transition-colors duration-300;
+.card {
+  @apply bg-white border border-gray-200 dark:bg-[#242529] dark:border-[#2e2f31] rounded-xl p-6 shadow-sm
+         hover:border-yellow-500 transition;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(260px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slideLeft {
+  animation: slideLeft 0.3s ease-out forwards;
 }

@@ -15,10 +15,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+      </head>
       <body className="flex">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Sidebar />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 mr-[60px] h-screen overflow-y-auto">{children}</main>
         </ThemeProvider>
       </body>
     </html>
