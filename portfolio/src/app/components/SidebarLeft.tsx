@@ -7,11 +7,11 @@ import LanguageCircle from "./LanguageCircle";
 export default function SidebarLeft() {
   return (
     <aside
-      className="fixed left-0 top-0 h-full w-[300px] bg-white text-gray-900 border-r border-gray-200 dark:bg-[#1D1E22] dark:text-white dark:border-[#2B2C30] overflow-y-auto flex flex-col px-8 py-10"
+      className="fixed left-0 top-0 h-full w-[300px] bg-sidebar-bg text-sidebar-text border-r border-sidebar-border overflow-y-auto flex flex-col px-8 py-10"
     >
       {/* Profile */}
       <div className="text-center">
-        <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 shadow-lg">
+        <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-sidebar-border shadow-lg">
           <Image
             src="/profile.png"
             alt="Profile"
@@ -31,7 +31,7 @@ export default function SidebarLeft() {
         <Info label="Age" value="26" />
       </div>
 
-      <div className="border-b border-gray-200 dark:border-gray-700 my-6" />
+      <div className="border-b border-sidebar-border my-6" />
 
       {/* Languages */}
       <div className="flex justify-between px-2">
@@ -40,7 +40,7 @@ export default function SidebarLeft() {
         <LanguageCircle percent={70} label="Hindi" />
       </div>
 
-      <div className="border-b border-gray-200 dark:border-gray-700 my-6" />
+      <div className="border-b border-sidebar-border my-6" />
 
       {/* Skills */}
       <div className="space-y-4">
@@ -51,7 +51,7 @@ export default function SidebarLeft() {
         <ProgressBar label="Firebase / Supabase" percent={85} />
       </div>
 
-      <div className="border-b border-gray-200 dark:border-gray-700 my-6" />
+      <div className="border-b border-sidebar-border my-6" />
 
       {/* Tools */}
       <ul className="space-y-2 text-sm">

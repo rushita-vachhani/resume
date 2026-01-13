@@ -3,11 +3,13 @@
 import { useState, useEffect } from "react";
 import SlideMenu from "./SlideMenu";
 import { useTheme } from "next-themes";
+import { usePathname } from "next/navigation";
 
 export default function SidebarRight() {
   const [open, setOpen] = useState(false);
   const { setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     setMounted(true);
@@ -17,7 +19,7 @@ export default function SidebarRight() {
     <>
       {/* Thin Right Vertical Bar */}
       <aside
-        className="fixed right-0 top-0 h-full w-[60px] bg-white border-l border-gray-200 dark:bg-[#1D1E22] dark:border-[#2B2C30] flex flex-col items-center pt-8"
+        className="fixed right-0 top-0 h-full w-[60px] bg-sidebar-bg border-l border-sidebar-border flex flex-col items-center pt-8"
       >
         {/* Hamburger Icon */}
         <button
@@ -36,8 +38,8 @@ export default function SidebarRight() {
         </button>
 
         {/* Rotated HOME text */}
-        <p className="mt-20 rotate-90 text-sm text-gray-500 dark:text-gray-400 tracking-widest">
-          HOME
+        <p className="mt-20 rotate-90 text-sm text-gray-500 dark:text-gray-400 tracking-widest whitespace-nowrap">
+          {pathname === "/" ? "HOME" : pathname.split("/")[1].toUpperCase()}
         </p>
       </aside>
 

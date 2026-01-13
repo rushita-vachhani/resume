@@ -6,7 +6,7 @@ export default function Home() {
 
       {/* HERO HEADER */}
       <div
-        className="bg-white border border-gray-200 dark:bg-[#242529] dark:border-[#2e2f31] rounded-xl shadow-md 
+        className="bg-card-bg border border-card-border rounded-xl shadow-md 
           p-10 flex justify-between items-center
         "
       >

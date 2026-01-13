@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function SlideMenu({ close }: { close: () => void }) {
   return (
     <div
-      className="fixed right-0 top-0 h-full w-[260px] bg-white text-gray-900 border-l border-gray-200 dark:bg-[#242529] dark:text-white shadow-xl dark:border-gray-700 animate-slideLeft z-50"
+      className="fixed right-0 top-0 h-full w-[260px] bg-card-bg text-body-text border-l border-card-border shadow-xl animate-slideLeft z-50"
     >
       <button
         className="text-right w-full py-4 pr-6 text-xl text-gray-600 dark:text-gray-400 hover:text-yellow-400"

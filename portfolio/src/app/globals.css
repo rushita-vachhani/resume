@@ -1,18 +1,49 @@
 @import "tailwindcss";
 
 @theme {
-  --color-darkBg: #141518;
-  --color-darkCard: #242529;
+  --color-body-bg: var(--body-bg);
+  --color-body-text: var(--body-text);
+
+  --color-sidebar-bg: var(--sidebar-bg);
+  --color-sidebar-text: var(--sidebar-text);
+  --color-sidebar-border: var(--sidebar-border);
+
+  --color-card-bg: var(--card-bg);
+  --color-card-border: var(--card-border);
 }
 
 @variant dark (&:where(.dark, .dark *));
+
+:root {
+  --body-bg: #f9fafb; /* gray-50 */
+  --body-text: #111827; /* gray-900 */
+
+  --sidebar-bg: #ffffff;
+  --sidebar-text: #111827;
+  --sidebar-border: #e5e7eb; /* gray-200 */
+
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+}
+
+.dark {
+  --body-bg: #1a1b1e;
+  --body-text: #e5e7eb; /* gray-200 */
+
+  --sidebar-bg: #1d1e22;
+  --sidebar-text: #ffffff;
+  --sidebar-border: #2b2c30;
+
+  --card-bg: #242529;
+  --card-border: #2e2f31;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-gray-50 text-gray-900 dark:bg-[#1a1b1e] dark:text-gray-200 transition-colors duration-300;
+  @apply bg-body-bg text-body-text transition-colors duration-300;
   font-family: "Inter", system-ui, sans-serif;
 }
 
@@ -21,7 +52,7 @@ body {
 }
 
 .card {
-  @apply bg-white border border-gray-200 dark:bg-[#242529] dark:border-[#2e2f31] rounded-xl p-6 shadow-sm
+  @apply bg-card-bg border border-card-border rounded-xl p-6 shadow-sm
          hover:border-yellow-500 transition;
 }
 
