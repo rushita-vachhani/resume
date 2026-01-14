@@ -1,37 +1,75 @@
-const skills = [
-  { name: "React / Next.js", level: 95 },
-  { name: "React Native", level: 90 },
-  { name: "Node.js / Express", level: 85 },
-  { name: "Supabase / Firebase", level: 88 },
-  { name: "PostgreSQL / MongoDB", level: 82 },
-  { name: "AWS / DigitalOcean", level: 78 },
-];
+import SkillSection from "../components/SkillSection";
 
-export default function Skills() {
+export default function SkillsPage() {
   return (
-    <div className="section-container">
-      <h1 className="mb-6 text-3xl font-bold">Skills</h1>
+    <div className="section-container space-y-12">
+      {/* Header */}
+      <header>
+        <h1 className="text-4xl font-bold text-text mb-2">
+          Technical Skills
+        </h1>
+        <p className="text-muted max-w-2xl">
+          A snapshot of the technologies and tools I use to design, build,
+          and maintain scalable software systems.
+        </p>
+      </header>
 
-      <div
-        className="card-base space-y-5 bg-white text-gray-900 border-gray-200
-                   dark:bg-darkCard dark:text-gray-100 dark:border-[#2f3033]"
-      >
-        {skills.map((skill) => (
-          <div key={skill.name}>
-            <div className="flex items-center justify-between">
-              <span className="text-sm">{skill.name}</span>
-              <span className="text-xs text-gray-500 dark:text-gray-400">
-                {skill.level}%
-              </span>
-            </div>
-            <div className="mt-1 h-2 w-full rounded-full bg-gray-200 dark:bg-gray-700">
-              <div
-                className="h-2 rounded-full bg-yellow-500"
-                style={{ width: `${skill.level}%` }}
-              />
-            </div>
-          </div>
-        ))}
+      {/* Skills Grid */}
+      <div className="grid md:grid-cols-2 gap-8">
+        <SkillSection
+          title="Programming Languages"
+          description="Strong foundations in object-oriented and data-driven programming."
+          skills={[
+            { name: "Java", level: 85 },
+            { name: "Python", level: 85 },
+            { name: "JavaScript / TypeScript", level: 90 },
+            { name: "SQL", level: 80 },
+          ]}
+        />
+
+        <SkillSection
+          title="Frontend Development"
+          description="Building accessible, responsive, and maintainable UIs."
+          skills={[
+            { name: "React", level: 90 },
+            { name: "Next.js", level: 85 },
+            { name: "Tailwind CSS", level: 90 },
+            { name: "HTML & CSS", level: 95 },
+          ]}
+        />
+
+        <SkillSection
+          title="Backend & Systems"
+          description="Designing APIs and backend services with scalability in mind."
+          skills={[
+            { name: "Node.js / Express", level: 85 },
+            { name: "Spring Boot", level: 80 },
+            { name: "REST APIs", level: 90 },
+            { name: "Authentication & Security", level: 75 },
+          ]}
+        />
+
+        <SkillSection
+          title="Data & Machine Learning"
+          description="Working with data pipelines, analytics, and ML fundamentals."
+          skills={[
+            { name: "Data Processing (Pandas, NumPy)", level: 80 },
+            { name: "Machine Learning Basics", level: 70 },
+            { name: "Data Visualization", level: 75 },
+            { name: "Feature Engineering", level: 70 },
+          ]}
+        />
+
+        <SkillSection
+          title="Cloud, DevOps & Tools"
+          description="Tools and platforms used for collaboration and deployment."
+          skills={[
+            { name: "Git & GitHub", level: 90 },
+            { name: "Docker", level: 75 },
+            { name: "AWS (Basics)", level: 70 },
+            { name: "CI/CD Pipelines", level: 70 },
+          ]}
+        />
       </div>
     </div>
   );

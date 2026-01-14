@@ -1,23 +1,21 @@
-export default function Education() {
-  return (
-    <div className="section-container">
-      <h1 className="mb-6 text-3xl font-bold">Education</h1>
+import EducationTimeline from "../components/EducationTimeline";
 
-      <div
-        className="card-base bg-white text-gray-900 border-gray-200
-                   dark:bg-darkCard dark:text-gray-100 dark:border-[#2f3033]"
-      >
-        <h2 className="text-lg font-semibold">
-          Master of Science in Information Systems
-        </h2>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          Northeastern University
+export default function EducationPage() {
+  return (
+    <div className="section-container space-y-12">
+      {/* Header */}
+      <header>
+        <h1 className="text-4xl font-bold text-text mb-3">
+          Education
+        </h1>
+        <p className="text-muted max-w-2xl">
+          My academic journey reflects a continuous process of learning,
+          exploration, and applying theory to real-world software systems.
         </p>
-        <p className="mt-2 text-sm text-gray-700 dark:text-gray-300">
-          Coursework in software engineering, data engineering, distributed
-          systems, and cloud computing.
-        </p>
-      </div>
+      </header>
+
+      {/* Timeline */}
+      <EducationTimeline />
     </div>
   );
 }

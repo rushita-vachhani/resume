@@ -1,91 +1,71 @@
-export default function AboutPage() {
+import React from 'react';
+import AnimatedBackground from '../components/AnimatedBackground';
+
+export default function About() {
   return (
-    <section className="relative min-h-screen overflow-hidden">
-      {/* Animated Background */}
+    <div className="section-container relative min-h-screen overflow-hidden">
+      {/* Global Animated Background */}
       <AnimatedBackground />
 
-      {/* Content */}
-      <div className="relative z-10 max-w-4xl">
-        <h1 className="text-4xl font-bold mb-6 text-text">
-          About Me
-        </h1>
-
-        <div className="space-y-6 text-base leading-7 text-muted">
-          <p>
-            I didn’t start my journey in software by chasing titles — I started it
-            by solving problems that people actually felt.
+      {/* Content Container */}
+      <div className="relative z-10 max-w-5xl mx-auto">
+        <header className="mb-12">
+          <h1 className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
+            About Me
+          </h1>
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl">
+            Developer, Problem Solver, and Lifelong Learner.
           </p>
+        </header>
 
-          <p>
-            Over the last five years, I’ve worked across the full spectrum of
-            software development: from designing user-centered interfaces, to
-            building scalable backend systems, to leading cross-functional teams
-            as a Product Owner in regulated healthcare environments.
-          </p>
+        <div className="grid gap-8 md:grid-cols-12">
+          {/* Main Story Column */}
+          <div className="md:col-span-8 space-y-8">
+            <section className="card backdrop-blur-sm bg-white/60 dark:bg-gray-800/60 border-white/20 dark:border-gray-700/30 p-8">
+              <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white flex items-center gap-2">
+                <span>🚀</span> The Journey
+              </h2>
+              <div className="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 space-y-4 leading-relaxed">
+                <p>
+                  {/* TIP: Start with a hook. Instead of "I am a student", try "My fascination with technology began when..." */}
+                  My journey into tech wasn't just about writing code; it was about solving puzzles. It started when I realized that a few lines of logic could build tools that help people.
+                </p>
+                <p>
+                  {/* TIP: Discuss a challenge. This shows resilience. */}
+                  Over the last few years, I&apos;ve dived deep into full-stack development. There were late nights debugging complex issues, but each error taught me something new about architecture and efficiency.
+                </p>
+                <p>
+                  {/* TIP: The Present/Goal. */}
+                  Currently, I&apos;m focused on building scalable web applications and learning about cloud infrastructure. I&apos;m eager to apply this knowledge in a professional environment where I can contribute to meaningful projects.
+                </p>
+              </div>
+            </section>
 
-          <p>
-            At <span className="text-text font-medium">Outright Solutions</span>,
-            I owned the end-to-end delivery of a HIPAA-compliant healthcare
-            platform. I translated real client needs into clear user stories,
-            collaborated closely with designers and engineers, and helped improve
-            development efficiency by over 50%.
-          </p>
+            <section className="card backdrop-blur-sm bg-white/60 dark:bg-gray-800/60 border-white/20 dark:border-gray-700/30 p-8">
+              <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white flex items-center gap-2">
+                <span>💡</span> Why I Code
+              </h2>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                I believe that code is the closest thing we have to magic. It allows us to create something from nothing. I am driven by the opportunity to build intuitive user experiences and robust backend systems that stand the test of time.
+              </p>
+            </section>
+          </div>
 
-          <p>
-            Earlier, at <span className="text-text font-medium">Square Infosoft</span>,
-            I grew from a technical analyst into a team lead, working on scalable
-            SaaS systems using React, Node.js, TypeScript, and Swift. That phase
-            taught me how systems evolve — and why clean architecture matters.
-          </p>
-
-          <p>
-            Today, as a Master’s student in Software Engineering at Northeastern
-            University, I’m deepening my understanding of system design, data
-            management, and user experience. I’m especially motivated by building
-            secure, human-centered products that make a real impact.
-          </p>
-
-          <p>
-            I’m currently seeking internship opportunities where I can
-            contribute as a thoughtful engineer, learn from strong teams, and
-            continue building software that simplifies complexity and improves
-            lives.
-          </p>
+          {/* Sidebar / Highlights Column */}
+          <div className="md:col-span-4 space-y-6">
+             {/* Call to Action for Recruiter */}
+             <div className="card bg-gradient-to-br from-card-gradient-start to-card-gradient-end text-white p-6 border-none shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <h3 className="font-bold mb-2 text-lg">Open to Opportunities</h3>
+                <p className="text-sm opacity-90 mb-4">
+                  I am actively looking for internship roles where I can bring my skills in React and Node.js to the table.
+                </p>
+                <button className="w-full px-4 py-2 bg-white text-card-gradient-start rounded-lg font-bold text-sm hover:bg-gray-100 transition-colors">
+                  Download Resume
+                </button>
+             </div>
+          </div>
         </div>
       </div>
-    </section>
-  );
-}
-
-function AnimatedBackground() {
-  return (
-    <div className="absolute inset-0 -z-0">
-      {/* Grid */}
-      <div
-        className="
-          absolute inset-0
-          bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),
-              linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]
-          bg-[size:40px_40px]
-        "
-      />
-
-      {/* Floating gradient */}
-      <div
-        className="
-          absolute -top-40 -left-40 w-[600px] h-[600px]
-          bg-yellow-500/10 rounded-full blur-3xl
-          animate-floatSlow
-        "
-      />
-
-      <div
-        className="
-          absolute bottom-0 right-0 w-[500px] h-[500px]
-          bg-indigo-500/10 rounded-full blur-3xl
-          animate-floatSlowReverse
-        "
-      />
     </div>
   );
 }

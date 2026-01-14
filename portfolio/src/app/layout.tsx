@@ -4,8 +4,8 @@ import Sidebar from "./components/Sidebar";
 import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
-  title: "Harshit Vachhani | Portfolio",
-  description: "Resume & portfolio of Harshit Vachhani",
+  title: "Rushita Vachhani | Portfolio",
+  description: "Resume & portfolio of Rushita Vachhani",
 };
 
 export default function RootLayout({
