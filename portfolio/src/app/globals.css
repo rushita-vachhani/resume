@@ -29,6 +29,10 @@
   --color-pencil-lead: var(--pencil-lead);
   --color-pencil-dark: var(--pencil-dark);
   --color-pencil-light: var(--pencil-light);
+
+  /* Timeline specific colors */
+  --color-timeline-line: var(--timeline-line);
+  --color-timeline-node: var(--timeline-node);
 }
 
 /* =========================================================
@@ -40,7 +44,7 @@
    Root (Light Theme)
    ========================================================= */
 :root {
-  --body-bg: #f9fafb;
+  --body-bg: #f5f5f7;
   --body-text: #111827;
 
   --sidebar-bg: #ffffff;
@@ -65,6 +69,10 @@
   --pencil-lead: #374151;
   --pencil-dark: #ca8a04;
   --pencil-light: #facc15;
+
+  /* Timeline colors matching PDF */
+  --timeline-line: #93c5fd;
+  --timeline-node: #93c5fd;
 }
 
 /* =========================================================
@@ -96,6 +104,10 @@
   --pencil-lead: #374151;
   --pencil-dark: #a16207;
   --pencil-light: #eab308;
+
+  /* Timeline colors for dark mode */
+  --timeline-line: #7cb3e8;
+  --timeline-node: #7cb3e8;
 }
 
 /* =========================================================
@@ -115,7 +127,7 @@ body {
    Layout Utilities
    ========================================================= */
 .section-container {
-  @apply ml-[300px] px-10 py-10 min-h-screen;
+  @apply ml-0 md:ml-[300px] px-6 md:px-10 py-10 min-h-screen;
 }
 
 /* =========================================================
