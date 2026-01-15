@@ -6,21 +6,26 @@ export interface ExperienceItem {
 
 export const experienceData: ExperienceItem[] = [
   {
-    year: "2019",
-    title: "Senior Technical Analyst & Head of Business Growth",
-    description:
-      "Led end-to-end development of scalable applications and translated business goals into technical solutions while improving CI/CD pipelines and UI/UX consistency.",
+     year: "2024",
+     title: "Product Owner & Senior Software Engineer",
+     org: "1Outright Solutions, India (Apr 2024 – Dec 2024)",
+     meta: "(JOTS360) Healthcare App | HIPAA-compliant",
+     stack: "React (Advanced), Node.js (Advanced), Express (Advanced), Scalable Architecture (Advanced), Real-time Data Processing (Advanced), Cloud Deployment (Intermediate)",
   },
   {
-    year: "2024",
-    title: "Product Owner & Senior Software Engineer",
-    description:
-      "Owned product roadmap for HIPAA-compliant healthcare platforms, designed scalable backend architectures, and collaborated with cross-functional teams using Agile practices.",
+     year: "2025",
+  title: "Product Owner & Senior Software Engineer",
+  org: "2Outright Solutions, India (Apr 2024 – Dec 2024)",
+  meta: "(JOTS360) Healthcare App | HIPAA-compliant",
+  stack:
+    "React (Advanced), Node.js (Advanced), Express (Advanced), Scalable Architecture (Advanced), Real-time Data Processing (Advanced), Cloud Deployment (Intermediate)",
   },
   {
-    year: "2025",
-    title: "Master’s Student – Computer Software Engineering",
-    description:
-      "Focused on system design, scalable architectures, and data-intensive applications through hands-on coursework and industry hackathons.",
+     year: "2026",
+  title: "Product Owner & Senior Software Engineer",
+  org: "Outright Solutions, India (Apr 2024 – Dec 2024)",
+  meta: "(JOTS360) Healthcare App | HIPAA-compliant",
+  stack:
+    "React (Advanced), Node.js (Advanced), Express (Advanced), Scalable Architecture (Advanced), Real-time Data Processing (Advanced), Cloud Deployment (Intermediate)",
   },
 ];
