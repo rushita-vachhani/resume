@@ -33,6 +33,14 @@
   /* Timeline specific colors */
   --color-timeline-line: var(--timeline-line);
   --color-timeline-node: var(--timeline-node);
+  --color-timeline-shadow: var(--timeline-shadow);
+
+  /* Text colors */
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  /* Shadow colors (for use in arbitrary values) */
+  --color-shadow-outer-dark: var(--shadow-outer-dark);
 }
 
 /* =========================================================
@@ -73,6 +81,17 @@
   /* Timeline colors matching PDF */
   --timeline-line: #93c5fd;
   --timeline-node: #93c5fd;
+  --timeline-shadow: rgba(0, 0, 0, 0.15);
+
+  /* Semantic Text */
+  --text-secondary: #4b5563; /* gray-600 */
+  --text-muted: #6b7280; /* gray-500 */
+
+  /* Neumorphism Shadows (Light Mode) */
+  --shadow-outer-dark: rgba(0, 0, 0, 0.08);
+  --shadow-outer-light: rgba(255, 255, 255, 0.8);
+  --shadow-inner-dark: rgba(0, 0, 0, 0.15);
+  --shadow-inner-light: rgba(255, 255, 255, 0.8);
 }
 
 /* =========================================================
@@ -108,6 +127,17 @@
   /* Timeline colors for dark mode */
   --timeline-line: #7cb3e8;
   --timeline-node: #7cb3e8;
+  --timeline-shadow: rgba(0, 0, 0, 0.5);
+
+  /* Semantic Text */
+  --text-secondary: #9ca3af; /* gray-400 */
+  --text-muted: #6b7280; /* gray-500 */
+
+  /* Neumorphism Shadows (Dark Mode) */
+  --shadow-outer-dark: rgba(0, 0, 0, 0.6);
+  --shadow-outer-light: rgba(255, 255, 255, 0.05);
+  --shadow-inner-dark: rgba(0, 0, 0, 0.6);
+  --shadow-inner-light: rgba(255, 255, 255, 0.05);
 }
 
 /* =========================================================
