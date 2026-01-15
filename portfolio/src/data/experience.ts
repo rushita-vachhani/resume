@@ -15,7 +15,7 @@ export const experienceData: ExperienceItem[] = [
     title: "Bachelor of Computer Applications",
     company: "GLS University, India",
     context: "Gold Medalist | Hackathon Winner",
-    description: "Secured 1st Rank in Health & Wellness at National Hackathon (Govt of Gujarat). Focus: OOP, C++, Java, and Data Structures[cite: 2, 4, 5, 25].",
+    description: "Secured 1st Rank in Health & Wellness at National Hackathon (Govt of Gujarat). Focus: OOP, C++, Java, and Data Structures",
     type: "education"
   },
   {
@@ -23,7 +23,7 @@ export const experienceData: ExperienceItem[] = [
     title: "Sr. Technical Analyst & Head of Business Growth",
     company: "Square Infosoft, India",
     context: "Enterprise Web & Mobile Platforms",
-    description: "Led end-to-end development of scalable applications. [cite_start]Managed CI/CD pipelines, UI/UX consistency, and RESTful API design using Java and SwiftUI[cite: 26, 27, 28].",
+    description: "Led end-to-end development of scalable applications. Managed CI/CD pipelines, UI/UX consistency, and RESTful API design using Java & SwiftUI.",
     type: "work"
   },
   {
@@ -31,7 +31,7 @@ export const experienceData: ExperienceItem[] = [
     title: "Product Owner & Sr. Software Engineer",
     company: "Outright Solutions, India",
     context: "(JOTS360) HIPAA-compliant Healthcare App",
-    description: "Owned product roadmap. [cite_start]Designed scalable backend architecture and real-time data pipelines using Advanced React, Node.js, and Express[cite: 7, 8].",
+    description: "Owned product roadmap. Designed scalable backend architecture & real-time data pipelines using React, Node.js, Express.",
     type: "work"
   },
   {
@@ -39,7 +39,7 @@ export const experienceData: ExperienceItem[] = [
     title: "Master’s Student – Computer Software Engineering",
     company: "Northeastern University, Boston, MA",
     context: "Expected Graduation: 2027",
-    description: "Focused on System Design, Algorithms, and Cloud Computing. [cite_start]Building data-intensive applications and scalable architectures[cite: 29, 30, 31, 32].",
+    description: "Focused on System Design, Algorithms, and Cloud Computing. Building data-intensive applications and scalable architectures.",
     type: "education"
   },
   {
@@ -47,7 +47,7 @@ export const experienceData: ExperienceItem[] = [
     title: "Co-op: Software Engineer Intern",
     company: "Fortune 500 Company (Goal)",
     context: "Cloud/SaaS Platforms",
-    description: "Targeting roles developing scalable cloud platforms and microservices architecture using AWS Lambda and React.js[cite: 14, 15, 16, 17].",
+    description: "Targeting roles developing scalable cloud platforms and microservices architecture using AWS Lambda and React.js.",
     type: "goal"
   },
   {
@@ -55,7 +55,7 @@ export const experienceData: ExperienceItem[] = [
     title: "Software Engineer II (Full-time)",
     company: "Fortune 500 SaaS Product Company (Goal)",
     context: "Enterprise Software Solutions",
-    description: "Building Data Analytics platforms and leading technical implementation of CI/CD and Containerization (Docker/Kubernetes)[cite: 33, 34, 35].",
+    description: "Building Data Analytics platforms and leading technical implementation of CI/CD and Containerization (Docker/Kubernetes).",
     type: "goal"
   },
   {
@@ -63,7 +63,7 @@ export const experienceData: ExperienceItem[] = [
     title: "Product Manager / Sr. Architect",
     company: "Established Tech Organization (Goal)",
     context: "Healthcare Technology",
-    description: "Leading large SaaS projects integrating AI analytics for medical diagnostics. [cite_start]Strategic planning and architectural vision[cite: 20, 21, 23].",
+    description: "Leading large SaaS projects integrating AI analytics for medical diagnostics. Strategic planning and architectural vision.",
     type: "goal"
   },
   {
@@ -71,7 +71,7 @@ export const experienceData: ExperienceItem[] = [
     title: "VP of Engineering / CTO",
     company: "Global Tech Organization (Goal)",
     context: "Executive Leadership",
-    description: "Defining technical strategy, overseeing engineering organizations, and driving innovation leadership and ethical AI[cite: 36, 37].",
-    type: "goal"
+    description: "Defining technical strategy, overseeing engineering organizations, and driving innovation leadership and ethical AI.",
+    type: undefined
   },
 ];

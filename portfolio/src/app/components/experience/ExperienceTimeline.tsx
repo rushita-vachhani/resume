@@ -161,7 +161,7 @@ export default function ExperienceTimeline() {
             key={`${item.year}-${index}`}
             className="absolute w-1/2"
             style={{
-              top: `${index * ROW_HEIGHT + 50}px`,
+              top: `${index * ROW_HEIGHT - 20}px`,
               left: side === "left" ? "5%" : "45%",
               paddingRight: side === "left" ? "70px" : undefined,
               paddingLeft: side === "right" ? "70px" : undefined,
