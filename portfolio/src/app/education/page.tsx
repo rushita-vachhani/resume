@@ -4,11 +4,11 @@ export default function EducationPage() {
   return (
     <div className="section-container space-y-12">
       {/* Header */}
-      <header>
-        <h1 className="text-4xl font-bold text-text mb-3">
+      <header className="mb-16 max-w-3xl">
+        <h1 className="text-4xl font-bold text-body-text mb-4">
           Education
         </h1>
-        <p className="text-muted max-w-2xl">
+        <p className="text-text-secondary text-lg">
           My academic journey reflects a continuous process of learning,
           exploration, and applying theory to real-world software systems.
         </p>
