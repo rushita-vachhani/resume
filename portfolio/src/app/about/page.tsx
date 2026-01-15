@@ -8,64 +8,147 @@ export default function About() {
       <AnimatedBackground />
 
       {/* Content Container */}
-      <div className="relative z-10 max-w-5xl mx-auto">
-        <header className="mb-12">
-          <h1 className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
-            About Me
+      <div className="relative z-10 max-w-6xl mx-auto">
+        {/* Creative Header */}
+        <header className="mb-16 text-center md:text-left">
+          <h1 className="text-5xl md:text-7xl font-black mb-6 text-body-text tracking-tight">
+            About <span className="text-primary">Me</span>
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl">
-            Developer, Problem Solver, and Lifelong Learner.
+          <p className="text-2xl text-text-secondary max-w-2xl font-light leading-relaxed">
+            More than just a <span className="font-semibold text-primary">developer</span>. <br/>
+            I&apos;m a storyteller, a problem solver, and a tech enthusiast.
           </p>
         </header>
 
-        <div className="grid gap-8 md:grid-cols-12">
-          {/* Main Story Column */}
-          <div className="md:col-span-8 space-y-8">
-            <section className="card backdrop-blur-sm bg-white/60 dark:bg-gray-800/60 border-white/20 dark:border-gray-700/30 p-8">
-              <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white flex items-center gap-2">
-                <span>🚀</span> The Journey
+        <div className="grid gap-10 md:grid-cols-12">
+          {/* Left Column: The Narrative */}
+          <div className="md:col-span-7 space-y-10">
+            {/* The Journey Card */}
+            <section className="
+              rounded-[2.5rem] p-10
+              bg-body-bg
+              shadow-[20px_20px_60px_var(--shadow-outer-dark),_-20px_-20px_60px_var(--shadow-outer-light)]
+              relative overflow-hidden
+            ">
+              <div className="absolute top-0 right-0 p-10 opacity-5 text-9xl text-primary rotate-12 select-none pointer-events-none">
+                <i className="bi bi-rocket-takeoff-fill"></i>
+              </div>
+              
+              <h2 className="text-3xl font-bold mb-6 text-body-text flex items-center gap-3 relative z-10">
+                The Journey
               </h2>
-              <div className="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 space-y-4 leading-relaxed">
+              
+              <div className="prose dark:prose-invert max-w-none text-text-secondary space-y-6 leading-relaxed relative z-10">
                 <p>
-                  {/* TIP: Start with a hook. Instead of "I am a student", try "My fascination with technology began when..." */}
-                  My journey into tech wasn't just about writing code; it was about solving puzzles. It started when I realized that a few lines of logic could build tools that help people.
+                  My fascination with technology began not with code, but with <span className="font-semibold text-primary">curiosity</span>. I wanted to know how things worked behind the screen. That curiosity led me to write my first &quot;Hello World,&quot; and I haven&apos;t looked back since.
                 </p>
                 <p>
-                  {/* TIP: Discuss a challenge. This shows resilience. */}
-                  Over the last few years, I&apos;ve dived deep into full-stack development. There were late nights debugging complex issues, but each error taught me something new about architecture and efficiency.
+                  From late-night debugging sessions to the thrill of deploying a scalable application, I&apos;ve fallen in love with the process of creation. I see every bug as a puzzle and every project as an opportunity to learn something new.
                 </p>
                 <p>
-                  {/* TIP: The Present/Goal. */}
-                  Currently, I&apos;m focused on building scalable web applications and learning about cloud infrastructure. I&apos;m eager to apply this knowledge in a professional environment where I can contribute to meaningful projects.
+                  Today, I&apos;m pursuing my Master&apos;s in Software Engineering, bridging the gap between theoretical concepts and real-world solutions.
                 </p>
               </div>
             </section>
 
-            <section className="card backdrop-blur-sm bg-white/60 dark:bg-gray-800/60 border-white/20 dark:border-gray-700/30 p-8">
-              <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white flex items-center gap-2">
-                <span>💡</span> Why I Code
+            {/* Why I Code Card - Inset Style for Contrast */}
+            <section className="
+              rounded-[2.5rem] p-10
+              bg-body-bg
+              shadow-[inset_10px_10px_20px_var(--shadow-inner-dark),inset_-10px_-10px_20px_var(--shadow-inner-light)]
+            ">
+              <h2 className="text-2xl font-bold mb-4 text-primary">
+                Why I Code
               </h2>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                I believe that code is the closest thing we have to magic. It allows us to create something from nothing. I am driven by the opportunity to build intuitive user experiences and robust backend systems that stand the test of time.
+              <p className="text-text-secondary leading-relaxed italic">
+                &quot;Code is the closest thing we have to magic. It allows us to create something from nothing, to solve problems that affect real people, and to build the future one line at a time.&quot;
               </p>
             </section>
           </div>
 
-          {/* Sidebar / Highlights Column */}
-          <div className="md:col-span-4 space-y-6">
-             {/* Call to Action for Recruiter */}
-             <div className="card bg-gradient-to-br from-card-gradient-start to-card-gradient-end text-white p-6 border-none shadow-lg transform hover:scale-105 transition-transform duration-300">
-                <h3 className="font-bold mb-2 text-lg">Open to Opportunities</h3>
-                <p className="text-sm opacity-90 mb-4">
-                  I am actively looking for internship roles where I can bring my skills in React and Node.js to the table.
-                </p>
-                <button className="w-full px-4 py-2 bg-white text-card-gradient-start rounded-lg font-bold text-sm hover:bg-gray-100 transition-colors">
+          {/* Right Column: Highlights & Personality */}
+          <div className="md:col-span-5 space-y-8">
+            
+            {/* Quick Stats / Highlights */}
+            <div className="grid grid-cols-2 gap-6">
+               <HighlightCard icon="bi-mortarboard-fill" label="Master's Student" />
+               <HighlightCard icon="bi-code-slash" label="Full Stack Dev" />
+               <HighlightCard icon="bi-puzzle-fill" label="Problem Solver" />
+               <HighlightCard icon="bi-infinity" label="Lifelong Learner" />
+            </div>
+
+            {/* Beyond the Code */}
+            <section className="
+              rounded-[2.5rem] p-8
+              bg-body-bg
+              shadow-[20px_20px_60px_var(--shadow-outer-dark),_-20px_-20px_60px_var(--shadow-outer-light)]
+            ">
+              <h3 className="font-bold mb-6 text-xl text-body-text">Beyond the Code</h3>
+              <div className="flex flex-wrap gap-4">
+                <InterestPill icon="bi-camera-fill" label="Photography" />
+                <InterestPill icon="bi-controller" label="Gaming" />
+                <InterestPill icon="bi-music-note-beamed" label="Music" />
+                <InterestPill icon="bi-book-half" label="Reading" />
+              </div>
+            </section>
+
+            {/* CTA */}
+            <div className="
+              rounded-[2.5rem] p-8 text-center
+              bg-body-bg
+              border-2 border-primary/10
+              shadow-[20px_20px_60px_var(--shadow-outer-dark),_-20px_-20px_60px_var(--shadow-outer-light)]
+            ">
+               <h3 className="font-bold mb-2 text-lg text-body-text">Let&apos;s Create Together</h3>
+               <p className="text-sm text-text-secondary mb-6">
+                 Open to internships and collaborative projects.
+               </p>
+               <a 
+                 href="https://docs.google.com/document/d/1srg1XYpJQfZqMBG7pg0iG4KK1oHeYLFJRpb6MvhTckY/edit?usp=sharing"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="
+                   inline-block px-8 py-3 rounded-full font-bold text-primary
+                  bg-body-bg
+                  shadow-[6px_6px_12px_var(--shadow-outer-dark),_-6px_-6px_12px_var(--shadow-outer-light)]
+                  hover:shadow-[inset_4px_4px_8px_var(--shadow-inner-dark),inset_-4px_-4px_8px_var(--shadow-inner-light)]
+                  active:scale-95 transition-all duration-300
+                 "
+               >
                   Download Resume
-                </button>
-             </div>
+               </a>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   );
+}
+
+function HighlightCard({ icon, label }: { icon: string, label: string }) {
+  return (
+    <div className="
+      flex flex-col items-center justify-center p-6 rounded-[2rem]
+      bg-body-bg
+      shadow-[10px_10px_20px_var(--shadow-outer-dark),_-10px_-10px_20px_var(--shadow-outer-light)]
+      hover:-translate-y-1 transition-transform duration-300
+    ">
+      <i className={`bi ${icon} text-3xl text-primary mb-3`}></i>
+      <span className="text-sm font-semibold text-text-secondary text-center">{label}</span>
+    </div>
+  )
+}
+
+function InterestPill({ icon, label }: { icon: string, label: string }) {
+  return (
+    <div className="
+      flex items-center gap-2 px-4 py-2 rounded-full
+      bg-body-bg
+      shadow-[inset_3px_3px_6px_var(--shadow-inner-dark),inset_-3px_-3px_6px_var(--shadow-inner-light)]
+    ">
+      <i className={`bi ${icon} text-primary`}></i>
+      <span className="text-sm font-medium text-text-secondary">{label}</span>
+    </div>
+  )
 }

@@ -1,9 +1,9 @@
-type EducationItemProps = {
+interface EducationItemProps {
   year: string;
   title: string;
   institution: string;
   description: string;
-};
+}
 
 export default function EducationItem({
   year,
@@ -12,22 +12,30 @@ export default function EducationItem({
   description,
 }: EducationItemProps) {
   return (
-    <div className="relative pl-10">
-      {/* Connector Dot */}
-      <span className="absolute left-[-45px] top-8 w-4 h-4 rounded-full bg-primary border-4 border-body-bg z-10" />
+    <div
+      className="
+        relative flex flex-col
+        rounded-[2.5rem] p-8
+        bg-body-bg
+        shadow-[15px_15px_40px_var(--shadow-outer-dark),_-15px_-15px_40px_var(--shadow-outer-light)]
+        hover:-translate-y-1 transition-transform duration-300
+      "
+    >
+      {/* Year Pill */}
+      <span
+        className="
+          self-start mb-4 px-4 py-2 rounded-full text-sm font-bold text-primary
+          bg-body-bg
+          shadow-[inset_3px_3px_6px_var(--shadow-inner-dark),inset_-3px_-3px_6px_var(--shadow-inner-light)]
+        "
+      >
+        {year}
+      </span>
 
-      <div className="card hover:scale-[1.02] transition-transform duration-300">
-        <span className="inline-block px-3 py-1 text-xs font-bold tracking-wide text-primary-hover bg-primary/10 rounded-full mb-2">{year}</span>
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-          {title}
-        </h3>
-        <p className="text-md text-gray-700 dark:text-gray-300 font-medium mb-2">
-          {institution}
-        </p>
-        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-          {description}
-        </p>
-      </div>
+      <h3 className="text-xl font-bold text-body-text mb-1">{title}</h3>
+      <h4 className="text-md font-semibold text-text-muted mb-4">{institution}</h4>
+
+      <p className="text-text-secondary text-sm leading-relaxed">{description}</p>
     </div>
   );
 }

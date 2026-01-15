@@ -6,25 +6,35 @@ export default function Home() {
 
       {/* HERO HEADER */}
       <div
-        className="bg-card-bg border border-card-border rounded-xl shadow-md 
-          p-10 flex justify-between items-center
+        className="
+          rounded-[2.5rem] p-10
+          bg-body-bg
+          shadow-[20px_20px_60px_var(--shadow-outer-dark),_-20px_-20px_60px_var(--shadow-outer-light)]
+          flex justify-between items-center
         "
       >
         <div className="max-w-xl">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+          <h1 className="text-4xl font-bold text-body-text">
             Hi, I’m <span className="text-primary">Rushitaben Vachhani</span>
           </h1>
 
-          <p className="mt-4 text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+          <p className="mt-4 text-text-secondary text-lg leading-relaxed">
             Master’s student in <strong>Computer Software Engineering</strong> at Northeastern University,
             with hands-on experience building <strong>full-stack, data-driven, and scalable applications</strong>.
           </p>
 
-          <p className="mt-2 text-gray-600 dark:text-gray-400 text-lg">
+          <p className="mt-2 text-text-secondary text-lg">
             Actively seeking <span className="text-primary font-semibold">Software Engineering / Data / ML Internships</span>.
           </p>
 
-          <button className="mt-6 bg-primary hover:bg-primary-hover text-black px-6 py-3 rounded-md font-semibold">
+          <button
+            className="mt-8 px-8 py-4 rounded-full font-bold text-primary
+              bg-body-bg
+              shadow-[6px_6px_12px_var(--shadow-outer-dark),_-6px_-6px_12px_var(--shadow-outer-light)]
+              hover:shadow-[inset_4px_4px_8px_var(--shadow-inner-dark),inset_-4px_-4px_8px_var(--shadow-inner-light)]
+              active:scale-95 transition-all duration-300
+            "
+          >
             View My Work
           </button>
         </div>
@@ -40,7 +50,7 @@ export default function Home() {
       </div>
 
       {/* METRICS */}
-      <div className="grid grid-cols-4 gap-8 mt-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 mb-16">
         <Metric title="Years of Experience" value="5+" />
         <Metric title="Academic & Industry Projects" value="15+" />
         <Metric title="Technologies Used" value="20+" />
@@ -48,11 +58,11 @@ export default function Home() {
       </div>
 
       {/* SERVICES / FOCUS AREAS */}
-      <h2 className="text-2xl font-semibold mt-12 mb-6">
+      <h2 className="text-2xl font-bold mt-12 mb-8 text-body-text">
         What I Work On
       </h2>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-10">
         <ServiceCard
           title="Full-Stack Development"
           description="Building scalable web applications using React, TypeScript, Node.js, Spring Boot, and REST APIs."
@@ -87,8 +97,16 @@ export default function Home() {
 function Metric({ title, value }: { title: string; value: string }) {
   return (
     <div className="text-center">
-      <h3 className="text-4xl font-bold text-gray-900 dark:text-white">{value}</h3>
-      <p className="text-gray-600 dark:text-gray-400">{title}</p>
+      <div
+        className="
+          w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center
+          bg-body-bg
+          shadow-[inset_5px_5px_10px_var(--shadow-inner-dark),inset_-5px_-5px_10px_var(--shadow-inner-light)]
+        "
+      >
+        <h3 className="text-3xl font-bold text-primary">{value}</h3>
+      </div>
+      <p className="text-text-secondary text-sm font-medium">{title}</p>
     </div>
   );
 }
@@ -101,9 +119,16 @@ function ServiceCard({
   description: string;
 }) {
   return (
-    <div className="card">
-      <h3 className="text-lg font-semibold text-primary mb-3">{title}</h3>
-      <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+    <div
+      className="
+        rounded-[2rem] p-8
+        bg-body-bg
+        shadow-[10px_10px_20px_var(--shadow-outer-dark),_-10px_-10px_20px_var(--shadow-outer-light)]
+        hover:-translate-y-2 transition-transform duration-300
+      "
+    >
+      <h3 className="text-lg font-bold text-primary mb-3">{title}</h3>
+      <p className="text-text-secondary text-sm leading-relaxed">
         {description}
       </p>
     </div>
