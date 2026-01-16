@@ -64,10 +64,7 @@ export default function SidebarLeft() {
         href="https://docs.google.com/document/d/1srg1XYpJQfZqMBG7pg0iG4KK1oHeYLFJRpb6MvhTckY/edit?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-1 px-6 py-1 rounded-full text-primary font-bold flex items-center justify-center gap-3
-        uppercase tracking-wider text-sm bg-body-bg shadow-[6px_6px_12px_var(--shadow-outer-dark),-6px_-6px_12px_var(--shadow-outer-light)] hover:shadow-[inset_4px_4px_8px_var(--shadow-inner-dark),inset_-4px_-4px_8px_var(--shadow-inner-light)]
-        active:scale-95
-        transition-all duration-300"
+        className="mt-1 px-6 py-1 rounded-full text-primary font-bold flex items-center justify-center gap-3 uppercase tracking-wider text-sm bg-body-bg shadow-[6px_6px_12px_var(--shadow-outer-dark),-6px_-6px_12px_var(--shadow-outer-light)] hover:shadow-[inset_4px_4px_8px_var(--shadow-inner-dark),inset_-4px_-4px_8px_var(--shadow-inner-light)] active:scale-95 transition-all duration-300"
       >
         Download Resume <i className="bi bi-download"></i>
       </a>
@@ -89,14 +86,7 @@ function SocialButton({ href, icon, label }: { href: string; icon: string; label
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="
-        flex items-center justify-center w-12 h-12 rounded-full
-        text-text-secondary
-        bg-body-bg
-        shadow-[6px_6px_12px_var(--shadow-outer-dark),_-6px_-6px_12px_var(--shadow-outer-light)]
-        hover:text-primary hover:shadow-[inset_4px_4px_8px_var(--shadow-inner-dark),inset_-4px_-4px_8px_var(--shadow-inner-light)]
-        transition-all duration-300
-      "
+      className="flex items-center justify-center w-12 h-12 rounded-full text-text-secondary bg-body-bg shadow-[6px_6px_12px_var(--shadow-outer-dark),_-6px_-6px_12px_var(--shadow-outer-light)] hover:text-primary hover:shadow-[inset_4px_4px_8px_var(--shadow-inner-dark),inset_-4px_-4px_8px_var(--shadow-inner-light)] transition-all duration-300"
       aria-label={label}
     >
       <i className={`bi ${icon} text-xl`}></i>
