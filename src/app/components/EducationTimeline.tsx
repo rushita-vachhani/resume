@@ -10,13 +10,13 @@ export default function EducationTimeline() {
       </div>
 
       {/* Education Cards */}
-      <div className="space-y-12 relative pb-12">
+      <div className="space-y-3 relative pb-12">
         <EducationItem
           year="2025 – Present"
           title="Master of Science in Computer Software Engineering"
           institution="Northeastern University, Boston"
           gpa="3.94"
-          description="Focused on software architecture, data management, system design, and scalable application development. Engaged in project-based learning and research-driven coursework."
+          description="Courses: Data Science Engineering Methods, Program Structure & Algorithms (A+), Data Management and Database Design (A+), Web Design/User Experience Engineering (A+), User Experience Design/Testing (A+), Concpts of Object-Oriented Design (A+), Career Managmnt for Engineers (A+), Operating Systems (A+)"
         />
 
         <EducationItem
@@ -24,7 +24,7 @@ export default function EducationTimeline() {
           title="Bachelor of Engineering in Computer Engineering"
           institution="Gujarat Technological University"
           gpa="3.95"
-          description="Built a strong foundation in algorithms, databases, operating systems, and web technologies. Participated in academic projects and technical workshops."
+          description="Courses: Advance Object-Oriented Programming (A+), Python (A+), Advanced Java (A+), DBMS (A+), Information Security (A+), Data Structures (A+), Data Communication & Networks (A+)"
         />
       </div>
     </div>

@@ -8,7 +8,7 @@ export default function EducationPage() {
         <h1 className="text-4xl font-bold text-body-text mb-4">
           Education
         </h1>
-        <p className="text-text-secondary text-lg">
+        <p className="text-text-secondary text-md">
           My academic journey reflects a continuous process of learning, exploration, and applying theory to real-world software systems.
         </p>
       </header>

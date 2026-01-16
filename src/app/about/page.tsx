@@ -10,7 +10,7 @@ export default function About() {
       {/* Content Container */}
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Creative Header */}
-        <header className="mb-16 text-center md:text-left">
+        <header className="mb-2 text-center md:text-left">
           <h1 className="text-5xl md:text-7xl font-black mb-6 text-body-text tracking-tight">
             About <span className="text-primary">Me</span>
           </h1>
