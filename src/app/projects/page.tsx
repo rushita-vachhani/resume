@@ -4,7 +4,7 @@ import { projectsData } from "@/data/projects";
 export default function Projects() {
   return (
     <div className="section-container">
-      <header className="mb-16 max-w-3xl">
+      <header className="mb-2 w-full">
         <h1 className="text-4xl font-bold mb-4 text-body-text">Projects</h1>
         <p className="text-gray-600 dark:text-gray-400 text-lg">
           A collection of applications and tools I&apos;ve built, demonstrating my journey through full-stack development and problem solving.
