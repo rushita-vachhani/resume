@@ -52,9 +52,9 @@ export default function Home() {
       {/* METRICS */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 mb-16">
         <Metric title="Years of Experience" value="5+" />
-        <Metric title="Academic & Industry Projects" value="15+" />
-        <Metric title="Technologies Used" value="20+" />
-        <Metric title="Hackathons & Awards" value="5+" />
+        <Metric title="Academic & Industry Projects" value="10+" />
+        <Metric title="Technologies Used" value="5+" />
+        <Metric title="Hackathons & Awards" value="3+" />
       </div>
 
       {/* SERVICES / FOCUS AREAS */}
