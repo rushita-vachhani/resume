@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
           flex justify-between items-center
         "
       >
-        <div className="max-w-xl">
+        <div className="w-full">
           <h1 className="text-4xl font-bold text-body-text">
             Hi, I’m <span className="text-primary">Rushitaben Vachhani</span>
           </h1>
@@ -27,16 +28,17 @@ export default function Home() {
             Actively seeking <span className="text-primary font-semibold">Software Engineering / Data / ML Internships</span>.
           </p> */}
 
-          <button
+          <Link
+            href="/experience"
             className="mt-8 px-8 py-4 rounded-full font-bold text-primary
               bg-body-bg
               shadow-[6px_6px_12px_var(--shadow-outer-dark),_-6px_-6px_12px_var(--shadow-outer-light)]
               hover:shadow-[inset_4px_4px_8px_var(--shadow-inner-dark),inset_-4px_-4px_8px_var(--shadow-inner-light)]
-              active:scale-95 transition-all duration-300
+              active:scale-95 transition-all duration-300 inline-block
             "
           >
             My Experience
-          </button>
+          </Link>
         </div>
 
         {/* Homepage image*/}
@@ -54,7 +56,7 @@ export default function Home() {
         <Metric title="Years of Experience" value="5+" />
         <Metric title="Academic & Industry Projects" value="10+" />
         <Metric title="Technologies Used" value="5+" />
-        <Metric title="Hackathons & Awards" value="3+" />
+        <Metric title="Hackathons & Awards" value="3" />
       </div>
 
       {/* SERVICES / FOCUS AREAS */}
