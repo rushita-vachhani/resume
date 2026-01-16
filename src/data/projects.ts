@@ -8,28 +8,27 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
-    title: "Arias Menu - AI Meal Planner",
-    description: "React Native + Supabase app that creates personalized meal plans and grocery lists using AI. Features include dietary restriction filtering and automated shopping list generation.",
-    skills: ["React Native", "Supabase", "OpenAI API", "TypeScript"],
-    gitUrl: "https://github.com/yourusername/arias-menu",
-    demoUrl: "https://your-link-here.com"
+    title: "Glimpse AI - Sports Commentary Platform",
+    description: "Built real-time React + Node.js UI pipelines to display AI-generated multilingual content safely and responsively. Implemented modular UI components and optimized client–server communication for high-frequency updates. Applied performance tuning and structured error handling to maintain system reliability.",
+    skills: ["React", "Node.js", "OpenAI API", "MongoDB", "WebSockets", "Swagger"],
+    gitUrl: "https://github.com/rushita-vachhani/GLIMPSE.git",    
   },
   {
-    title: "Speedboat AI",
-    description: "Next.js + Supabase platform helping agile teams manage risks and priorities with AI insights. Streamlines sprint planning and retrospective analysis.",
-    skills: ["Next.js", "Tailwind CSS", "PostgreSQL", "AI Integration"],
-    gitUrl: "https://github.com/yourusername/speedboat-ai"
+    title: "Comprehensive Rail Reservation System",
+    description: "Developed a production-grade rail ticketing system using Oracle SQL and PL/SQL, featuring advanced booking validation, waitlist management, transactional integrity, and secure API-style access. Created multi-dimensional reporting views to analyze passenger demographics, class utilization, and weekday vs weekend demand.",
+    skills: ["Oracle SQL", "PL/SQL", "Database Design", "Stored Procedures", "Exception Handling", "Data Integrity", "Analytical Views", "Secure Architecture", "Transaction Management"],
+    gitUrl: "https://github.com/rushita-vachhani/damg6210-crs-project.git"
   },
   {
-    title: "LivingEd",
-    description: "Homeschool planner app built with React Native and Supabase for lesson planning and tracking. Allows parents to schedule curriculum and track student progress.",
-    skills: ["React Native", "Redux", "Node.js", "Mobile UI"],
-    gitUrl: "https://github.com/yourusername/living-ed"
+    title: "MiNd TuNes - Music Player Application",
+    description: "Built interactive Android UI with emotion-recognition APIs to personalize user playlists in real-time. Designed efficient data flows and responsive components to improve user trust and interface experience.",
+    skills: ["Android", "Kotlin", "Java", "MongoDB", "RESTful API", "Face Recognition"]
   },
-  {
-    title: "Portfolio Website",
-    description: "A neumorphic personal portfolio website built with Next.js and Tailwind CSS, featuring dark mode and responsive design.",
-    skills: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
-    gitUrl: "https://github.com/yourusername/portfolio"
-  }
+  // {
+  //   title: "Glimpse AI - Sports Commentary Platform",
+  //   description: "Built real-time React + Node.js UI pipelines to display AI-generated multilingual content safely and responsively. Implemented modular UI components and optimized client–server communication for high-frequency updates. Applied performance tuning and structured error handling to maintain system reliability.",
+  //   skills: ["React", "Node.js", "OpenAI API", "MongoDB", "WebSockets", "Swagger"],
+  //   gitUrl: "https://github.com/rushita-vachhani/GLIMPSE.git",
+  //   demoUrl: "https://your-link-here.com"
+  // },
 ];
