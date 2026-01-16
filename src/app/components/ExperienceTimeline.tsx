@@ -7,7 +7,7 @@ export default function ExperienceTimeline() {
       {/* Central Vertical Line */}
       <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-card-gradient-start to-card-gradient-end transform md:-translate-x-1/2 rounded-full opacity-30" />
 
-      <div className="space-y-12">
+      <div className="space-y-4">
         {experiences.map((exp, index) => (
           <TimelineItem key={exp.id} data={exp} index={index} />
         ))}
@@ -30,7 +30,7 @@ function TimelineItem({ data, index }: { data: Experience; index: number }) {
       {/* Content Card */}
       <div className={`flex-1 w-full pl-20 md:pl-0 ${isLeft ? "md:pr-16" : "md:pl-16"}`}>
         <div
-          className="relative p-6 rounded-2xl bg-body-bg border border-card-border shadow-[6px_6px_12px_var(--shadow-outer-dark),_-6px_-6px_12px_var(--shadow-outer-light)] hover:shadow-[inset_4px_4px_8px_var(--shadow-inner-dark),inset_-4px_-4px_8px_var(--shadow-inner-light)] transition-all duration-300 group"
+          className="relative p-3 rounded-2xl bg-body-bg border border-card-border shadow-[6px_6px_12px_var(--shadow-outer-dark),_-6px_-6px_12px_var(--shadow-outer-light)] hover:shadow-[inset_4px_4px_8px_var(--shadow-inner-dark),inset_-4px_-4px_8px_var(--shadow-inner-light)] transition-all duration-300 group"
         >
           {/* Connector Line */}
           <div
