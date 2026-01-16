@@ -65,16 +65,15 @@ export default function SidebarLeft() {
         target="_blank"
         rel="noopener noreferrer"
         className="
-          mt-1 px-6 py-1 rounded-full
-          text-primary font-bold
-          flex items-center justify-center gap-3
-          uppercase tracking-wider text-sm
-          bg-body-bg
-          shadow-[6px_6px_12px_var(--shadow-outer-dark),_-6px_-6px_12px_var(--shadow-outer-light)]
-          hover:shadow-[inset_4px_4px_8px_var(--shadow-inner-dark),inset_-4px_-4px_8px_var(--shadow-inner-light)]
-          active:scale-95
-          transition-all duration-300
-        "
+        mt-1 px-6 py-1 rounded-full 
+        text-primary font-bold
+        flex items-center justify-center gap-3
+        uppercase tracking-wider text-sm
+        bg-body-bg
+        shadow-[6px_6px_12px_var(--shadow-outer-dark),_-6px_-6px_12px_var(--shadow-outer-light)]
+        hover:shadow-[inset_4px_4px_8px_var(--shadow-inner-dark),inset_-4px_-4px_8px_var(--shadow-inner-light)]
+        active:scale-95
+        transition-all duration-300"
       >
         Download Resume <i className="bi bi-download"></i>
       </a>
