@@ -10,12 +10,12 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     id: 1,
-    role: "Software Engineer Intern",
-    company: "Tech Company",
-    period: "Jan 2024 - Present",
+    role: "Teaching Assistant",
+    company: "Northeastern University",
+    period: "Jan 2026 - Present",
     description:
       "Developing scalable web applications using React, Next.js, and TypeScript. Collaborating with cross-functional teams to improve user experience and performance.",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    skills: ["Oracle", "SQL", "DBMS", "Pl/SQL"],
   },
   {
     id: 2,
