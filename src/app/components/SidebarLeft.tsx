@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import ProgressBar from "./ProgressBar";
 import LanguageCircle from "./LanguageCircle";
 
 export default function SidebarLeft() {
@@ -49,12 +48,10 @@ export default function SidebarLeft() {
       <div className="my-4 h-0.5 rounded-full bg-body-bg shadow-[inset_2px_2px_4px_var(--shadow-inner-dark),inset_-2px_-2px_4px_var(--shadow-inner-light)]" />
 
       {/* Core Skills */}
-      <div className="space-y-4">
-        <ProgressBar label="Java / Spring Boot" percent={95} />
-        <ProgressBar label="Node.js / Express" percent={90} />
-        <ProgressBar label="React / Next.js" percent={85} />
-        <ProgressBar label="SQL / PostgreSQL" percent={85} />
-        <ProgressBar label="Python / Data Processing" percent={80} />
+      <div className="flex flex-wrap gap-2 justify-center">
+        {["Java", "Spring Boot", "Node.js", "Express", "React", "Next.js", "PostgreSQL", "Python", "AWS"].map((skill) => (
+          <SkillTag key={skill} name={skill} />
+        ))}
       </div>
 
       <div className="my-8 h-0.5 rounded-full bg-body-bg shadow-[inset_2px_2px_4px_var(--shadow-inner-dark),inset_-2px_-2px_4px_var(--shadow-inner-light)]" />
@@ -109,5 +106,13 @@ function Tool({ text }: { text: string }) {
     <li className="flex gap-2 text-text-secondary">
       <span className="text-primary">✔</span> {text}
     </li>
+  );
+}
+
+function SkillTag({ name }: { name: string }) {
+  return (
+    <span className="px-3 py-1 text-xs font-bold text-text-secondary bg-body-bg rounded-xl shadow-[4px_4px_8px_var(--shadow-outer-dark),_-4px_-4px_8px_var(--shadow-outer-light)] hover:shadow-[inset_2px_2px_4px_var(--shadow-inner-dark),inset_-2px_-2px_4px_var(--shadow-inner-light)] hover:text-primary transition-all duration-300 cursor-default">
+      {name}
+    </span>
   );
 }

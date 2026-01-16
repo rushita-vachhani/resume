@@ -35,7 +35,7 @@ export default function Home() {
               active:scale-95 transition-all duration-300
             "
           >
-            View My Work
+            My Experience
           </button>
         </div>
 
