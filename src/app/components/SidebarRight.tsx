@@ -38,8 +38,12 @@ export default function SidebarRight() {
         </button>
 
         {/* Rotated HOME text */}
-        <p className="mt-20 rotate-90 text-sm text-gray-500 dark:text-gray-400 tracking-widest whitespace-nowrap">
-          {pathname === "/" ? "HOME" : pathname.split("/")[1].toUpperCase()}
+        <p className="mt-30 rotate-90 text-sm text-gray-500 dark:text-gray-400 tracking-widest whitespace-nowrap">
+          {pathname === "/"
+            ? "HOME"
+            : pathname.startsWith("/experience")
+            ? "TIMELINE & EXPERIENCE"
+            : pathname.split("/")[1].toUpperCase()}
         </p>
       </aside>
 
