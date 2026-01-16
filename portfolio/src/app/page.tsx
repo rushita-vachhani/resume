@@ -23,9 +23,9 @@ export default function Home() {
             with hands-on experience building <strong>full-stack, data-driven, and scalable applications</strong>.
           </p>
 
-          <p className="mt-2 text-text-secondary text-lg">
+          {/* <p className="mt-2 text-text-secondary text-lg">
             Actively seeking <span className="text-primary font-semibold">Software Engineering / Data / ML Internships</span>.
-          </p>
+          </p> */}
 
           <button
             className="mt-8 px-8 py-4 rounded-full font-bold text-primary
@@ -39,7 +39,7 @@ export default function Home() {
           </button>
         </div>
 
-        {/* OPTIONAL: add image later when available in /public */}
+        {/* Homepage image*/}
         {/* <Image
           src="/profile.png"
           alt="Profile photo"

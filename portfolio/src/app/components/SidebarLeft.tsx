@@ -25,38 +25,36 @@ export default function SidebarLeft() {
           Rushitaben Vachhani
         </h2>
         <p className="text-text-secondary text-sm text-center mt-2">
-          Software Engineering Graduate Student
+          Software Engineering Student
         </p>
-        <p className="text-text-muted text-xs mt-1">
-          Actively seeking internships
-        </p>
+        
       </div>
 
       {/* Basic Info */}
-      <div className="mt-8 space-y-3 text-sm">
-        <Info label="Location" value="Boston, MA" />
+      <div className="mt-2 space-y-1 text-sm">
+        <Info label="Program" value="Masters of Science" />
         <Info label="University" value="Northeastern University" />
-        <Info label="Program" value="M.S. Software Engineering" />
+        <Info label="Location" value="Boston, MA" />
       </div>
 
-      <div className="my-8 h-0.5 rounded-full bg-body-bg shadow-[inset_2px_2px_4px_var(--shadow-inner-dark),inset_-2px_-2px_4px_var(--shadow-inner-light)]" />
+      <div className="my-4 h-0.5 rounded-full bg-body-bg shadow-[inset_2px_2px_4px_var(--shadow-inner-dark),inset_-2px_-2px_4px_var(--shadow-inner-light)]" />
 
       {/* Languages */}
-      <div className="flex justify-between px-2">
+      <div className="flex justify-between px-0">
+        <LanguageCircle percent={100} label="English" />
         <LanguageCircle percent={100} label="Gujarati" />
-        <LanguageCircle percent={90} label="English" />
-        <LanguageCircle percent={75} label="Hindi" />
+        <LanguageCircle percent={95} label="Hindi" />
       </div>
 
-      <div className="my-8 h-0.5 rounded-full bg-body-bg shadow-[inset_2px_2px_4px_var(--shadow-inner-dark),inset_-2px_-2px_4px_var(--shadow-inner-light)]" />
+      <div className="my-4 h-0.5 rounded-full bg-body-bg shadow-[inset_2px_2px_4px_var(--shadow-inner-dark),inset_-2px_-2px_4px_var(--shadow-inner-light)]" />
 
       {/* Core Skills */}
       <div className="space-y-4">
-        <ProgressBar label="React / Next.js" percent={90} />
-        <ProgressBar label="Node.js / Express" percent={85} />
-        <ProgressBar label="Java / Spring Boot" percent={80} />
-        <ProgressBar label="Python / Data Processing" percent={80} />
+        <ProgressBar label="Java / Spring Boot" percent={95} />
+        <ProgressBar label="Node.js / Express" percent={90} />
+        <ProgressBar label="React / Next.js" percent={85} />
         <ProgressBar label="SQL / PostgreSQL" percent={85} />
+        <ProgressBar label="Python / Data Processing" percent={80} />
       </div>
 
       <div className="my-8 h-0.5 rounded-full bg-body-bg shadow-[inset_2px_2px_4px_var(--shadow-inner-dark),inset_-2px_-2px_4px_var(--shadow-inner-light)]" />
@@ -67,7 +65,7 @@ export default function SidebarLeft() {
         target="_blank"
         rel="noopener noreferrer"
         className="
-          mt-8 px-6 py-4 rounded-full
+          mt-1 px-6 py-1 rounded-full
           text-primary font-bold
           flex items-center justify-center gap-3
           uppercase tracking-wider text-sm
@@ -115,9 +113,8 @@ function SocialButton({ href, icon, label }: { href: string; icon: string; label
 
 function Info({ label, value }: { label: string; value: string | number }) {
   return (
-    <div className="flex justify-between text-text-secondary text-sm">
-      <span className="font-semibold text-body-text">{label}:</span>
-      <span className="text-right">
+    <div className="flex justify-center text-text-secondary text-sm">
+      <span className="text-center font-semibold text-body-text">
         {value}
       </span>
     </div>
