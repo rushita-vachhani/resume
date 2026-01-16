@@ -1,4 +1,4 @@
-import ExperienceTimeline from "../components/experience/ExperienceTimeline";
+import ExperienceTimeline from "../components/ExperienceTimeline";
 
 export default function ExperiencePage() {
   return (

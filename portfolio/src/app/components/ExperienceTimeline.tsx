@@ -1,5 +1,5 @@
 "use client";
-import { experiences, Experience } from "../../../data/experience";
+import { experiences, Experience } from "../../data/experience";
 
 export default function ExperienceTimeline() {
   return (
