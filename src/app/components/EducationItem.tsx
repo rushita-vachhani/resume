@@ -3,6 +3,7 @@ interface EducationItemProps {
   title: string;
   institution: string;
   description: string;
+  gpa?: string;
 }
 
 export default function EducationItem({
@@ -10,6 +11,7 @@ export default function EducationItem({
   title,
   institution,
   description,
+  gpa,
 }: EducationItemProps) {
   return (
     <div
@@ -33,7 +35,15 @@ export default function EducationItem({
       </span>
 
       <h3 className="text-xl font-bold text-body-text mb-1">{title}</h3>
-      <h4 className="text-md font-semibold text-text-muted mb-4">{institution}</h4>
+      <h4 className={`text-md font-semibold text-text-muted ${gpa ? "mb-2" : "mb-4"}`}>{institution}</h4>
+
+      {gpa && (
+        <div className="mb-4">
+          <span className="px-3 py-1 rounded-md bg-primary/10 text-primary text-sm font-bold">
+            GPA: {gpa}
+          </span>
+        </div>
+      )}
 
       <p className="text-text-secondary text-sm leading-relaxed">{description}</p>
     </div>
