@@ -4,11 +4,11 @@ export default function SkillsPage() {
   return (
     <div className="section-container space-y-12">
       {/* Header */}
-      <header className="mb-8 max-w-3xl">
+      <header className="mb-2 w-full">
         <h1 className="text-4xl font-bold text-body-text mb-4">
           Technical Skills
         </h1>
-        <p className="text-text-secondary text-lg leading-relaxed">
+        <p className="text-text-secondary text-md leading-relaxed">
           My technical toolbox. I treat these not just as items on a list, but as instruments to solve complex problems.
         </p>
       </header>
