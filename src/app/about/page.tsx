@@ -38,7 +38,7 @@ export default function About() {
                 The Journey
               </h2>
               
-              <div className="prose dark:prose-invert max-w-none text-text-secondary space-y-6 leading-relaxed relative z-10">
+              <div className="prose dark:prose-invert max-w-none text-text-secondary space-y-6 leading-relaxed relative z-10 text-justify">
                 <p>
                   My fascination with technology began not with code, but with <span className="font-semibold text-primary">curiosity</span>. I wanted to know how things worked behind the screen. That curiosity led me to write my first &quot;Hello World,&quot; and I haven&apos;t looked back since.
                 </p>

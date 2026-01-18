@@ -39,7 +39,7 @@ export const experiences: Experience[] = [
     id: 4,
     role: "Sr. Technical Analyst & Head of Business Growth",
     company: "Square Infosoft, Gujarat, India",
-    period: "Jan 2020 - May 2021",
+    period: "Jul 2019 - Apr 2024",
     description:
       "Created responsive landing pages and email templates. Assisted in frontend development using JavaScript and jQuery.",
     skills: ["Java", "Javascript", "SwiftUI", "AWS", "Git", "UI/UX Design", "CI/CD Pipelines", "Performance Optimization", "RESTful API Design"],
