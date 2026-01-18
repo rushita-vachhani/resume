@@ -60,6 +60,6 @@ export const experiences: Experience[] = [
     period: "Jul 2016 - Mar 2019",
     description:
       "Courses: Advance Object-Oriented Programming (A+), Python (A+), Advanced Java (A+), DBMS (A+), Information Security (A+), Data Structures (A+), Data Communication & Networks (A+)",
-    skills: ["OOP", "C++", "Java", "Python", "Agile/Scrum", "Data Structures & Algorithms"],
+    skills: ["9.69/10"],
   },
 ];
