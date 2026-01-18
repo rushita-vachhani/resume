@@ -30,7 +30,7 @@ export const experiences: Experience[] = [
     id: 3,
     role: "Product Owner & Senior Software Engineer",
     company: "Outright Solutions, Gujarat, India",
-    period: "Apr 2024 - Dec 2024",
+    period: "Apr 2024 - Nov 2024",
     description:
       "(JOTS360) Healthcare App | (HIPAA-compliant)",
     skills: ["React", "Node.js", "Express", "Scalable Architecture", "Real-time Data Processing", "Cloud Deployment"],
