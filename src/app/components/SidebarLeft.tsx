@@ -6,7 +6,7 @@ import LanguageCircle from "./LanguageCircle";
 export default function SidebarLeft() {
   return (
     <aside
-      className="fixed left-0 top-0 h-full w-[300px] bg-body-bg text-body-text overflow-y-auto flex flex-col px-8 py-10 shadow-[6px_0_20px_var(--shadow-outer-dark)] z-50"
+      className="fixed left-0 top-0 h-full w-[300px] bg-body-bg text-body-text overflow-y-auto flex flex-col px-8 py-7 shadow-[6px_0_20px_var(--shadow-outer-dark)] z-50"
     >
       {/* Profile */}
       <div className="text-center">
@@ -30,10 +30,10 @@ export default function SidebarLeft() {
       </div>
 
       {/* Basic Info */}
-      <div className="mt-2 space-y-1 text-sm">
+      <div className="mt-1 space-y-1 text-xs">
         <Info label="Program" value="Masters of Science" />
         <Info label="University" value="Northeastern University" />
-        <Info label="Location" value="Boston, MA" />
+        <Info label="Location" value="Boston, MA, United States" />
       </div>
 
       <div className="my-4 h-0.5 rounded-full bg-body-bg shadow-[inset_2px_2px_4px_var(--shadow-inner-dark),inset_-2px_-2px_4px_var(--shadow-inner-light)]" />
@@ -54,7 +54,7 @@ export default function SidebarLeft() {
         ))}
       </div>
 
-      <div className="my-8 h-0.5 rounded-full bg-body-bg shadow-[inset_2px_2px_4px_var(--shadow-inner-dark),inset_-2px_-2px_4px_var(--shadow-inner-light)]" />
+      <div className="my-4 h-0.5 rounded-full bg-body-bg shadow-[inset_2px_2px_4px_var(--shadow-inner-dark),inset_-2px_-2px_4px_var(--shadow-inner-light)]" />
 
       {/* Resume */}
       <a
