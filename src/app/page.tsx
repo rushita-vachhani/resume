@@ -67,7 +67,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-10">
         <ServiceCard
           title="Full-Stack Development"
-          description="Building scalable web applications using React, TypeScript, Node.js, Spring Boot, and REST APIs."
+          description="Building scalable web applications using React, React Native, Flutter, TypeScript, Node.js, Java, Spring Boot, Kotlin, Swift, Dart and REST APIs."
         />
         <ServiceCard
           title="Backend & Systems"
