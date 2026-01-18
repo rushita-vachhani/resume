@@ -21,9 +21,9 @@ export default function EducationTimeline() {
 
         <EducationItem
           year="2016 – 2019"
-          title="Bachelor of Engineering in Computer Engineering"
-          institution="Gujarat Technological University"
-          gpa="3.95"
+          title="Bachelor of Computer Applications (BCA) - Gold Medalist"
+          institution="GLS University"
+          gpa="3.88"
           description="Courses: Advance Object-Oriented Programming (A+), Python (A+), Advanced Java (A+), DBMS (A+), Information Security (A+), Data Structures (A+), Data Communication & Networks (A+)"
         />
       </div>
