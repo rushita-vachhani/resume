@@ -20,8 +20,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-4 text-text-secondary text-lg leading-relaxed">
-            Master’s student in <strong>Computer Software Engineering</strong> at Northeastern University,
-            with hands-on experience building <strong>full-stack, data-driven, and scalable applications</strong>.
+            Master’s candidate in <strong>Computer Software Engineering (GPA 3.94)</strong> with 5+ years of industry experience building scalable SaaS applications and backend systems using Java, Spring Boot, and Hibernate. Strong foundation in Data Structures, OOP, RESTful API development, and distributed systems, with hands-on experience architecting HIPAA-compliant, production-grade applications. Proven ability to design, optimize, and debug high-performance client-server architectures while collaborating in Agile environments. Passionate about backend engineering, system design, and building secure, reliable, and scalable Java-based services that drive measurable product impact.
           </p>
 
           {/* <p className="mt-2 text-text-secondary text-lg">

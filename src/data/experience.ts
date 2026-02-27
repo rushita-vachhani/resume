@@ -19,7 +19,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 2,
-    role: "Northeastern University (Student)",
+    role: "Northeastern University",
     company: "Masters of Computer Software Engineering",
     period: "Jan 2025 - Present",
     description:
@@ -28,7 +28,7 @@ export const experiences: Experience[] = [
   },
   {
     id: 3,
-    role: "Product Owner & Senior Software Engineer",
+    role: "Senior Software Engineer & Product Owner",
     company: "Outright Solutions, Gujarat, India",
     period: "Apr 2024 - Nov 2024",
     description:
@@ -42,7 +42,7 @@ export const experiences: Experience[] = [
     period: "Jul 2019 - Apr 2024",
     description:
       "Created responsive landing pages and email templates. Assisted in frontend development using JavaScript and jQuery.",
-    skills: ["Java", "Javascript", "SwiftUI", "AWS", "Git", "UI/UX Design", "CI/CD Pipelines", "Performance Optimization", "RESTful API Design"],
+    skills: ["Java", "Spring Boot", "React", "JavaScript", "Swift", "Kotlin", "AWS", "Git", "UI/UX Design", "CI/CD Pipelines", "Performance Optimization", "RESTful API Design"],
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ export const experiences: Experience[] = [
     period: "Feb 2018 - Apr 2018",
     description:
       "Participated National Hackathon organized by the Government of Gujarat & Secured 1st Rank in Health & Wellness Department",
-    skills: ["React", "Java", "MongoDB", "Figma"],
+    skills: ["React", "C/C++", "Java", "MongoDB", "Figma"],
   },
   {
     id: 6,
@@ -60,6 +60,6 @@ export const experiences: Experience[] = [
     period: "Jul 2016 - Mar 2019",
     description:
       "Courses: Advance Object-Oriented Programming (A+), Python (A+), Advanced Java (A+), DBMS (A+), Information Security (A+), Data Structures (A+), Data Communication & Networks (A+)",
-    skills: ["9.69/10"],
+    skills: ["3.88/4"],
   },
 ];
