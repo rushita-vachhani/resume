@@ -49,7 +49,7 @@ export default function SidebarLeft() {
 
       {/* Core Skills */}
       <div className="flex flex-wrap gap-2 justify-center">
-        {["Java", "Spring Boot", "Node.js", "Express", "Next.js", "React", "React Native", "Flutter", "Dart", "TypeScript", "Kotlin", "Swift", "PostgreSQL", "Python", "AWS"].map((skill) => (
+        {["Backend Engineering", "Scalable System Design","Database Optimization","Production Reliability","Algorithmic Problem Solving"].map((skill) => (
           <SkillTag key={skill} name={skill} />
         ))}
       </div>
