@@ -9,7 +9,7 @@ export default function SkillsPage() {
           Technical Skills
         </h1>
         <p className="text-text-secondary text-md leading-relaxed">
-          My technical toolbox. I treat these not just as items on a list, but as instruments to solve complex problems.
+          Focused on building scalable, reliable systems grounded in strong computer science fundamentals.
         </p>
       </header>
 
@@ -17,66 +17,84 @@ export default function SkillsPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pb-12">
         <SkillSection
           title="Programming Languages"
-          icon="bi-code-square"
-          description="Strong foundations in object-oriented and data-driven programming."
+          icon="bi-braces"
+          description="Building production-ready applications using Java, Python, and SQL with emphasis on clean design and maintainable code."
           skills={[
-            { name: "Java", level: 85, icon: "bi-cup-hot" },
-            { name: "Python", level: 85, icon: "bi-terminal" },
-            { name: "TypeScript", level: 90, icon: "bi-file-code" },
-            { name: "JavaScript", level: 90, icon: "bi-filetype-js" },
+            { name: "Java", level: 85, icon: "bi-braces" },
+            { name: "Python", level: 85, icon: "bi-code-slash" },
             { name: "SQL", level: 80, icon: "bi-database" },
+            { name: "TypeScript", level: 90, icon: "bi-filetype-tsx" },
+            { name: "JavaScript", level: 90, icon: "bi-filetype-js" },
           ]}
         />
 
         <SkillSection
-          title="Frontend Development"
-          icon="bi-window-desktop"
-          description="Building accessible, responsive, and maintainable UIs."
+          title="System Foundations"
+          icon="bi-cpu"
+          description="Grounded in Data Structures, Algorithms, concurrency fundamentals, and system-level thinking for building efficient software."
           skills={[
-            { name: "React", level: 90, icon: "bi-filetype-jsx" },
-            { name: "Next.js", level: 85, icon: "bi-arrow-right-square" },
-            { name: "Tailwind CSS", level: 90, icon: "bi-palette" },
-            { name: "HTML5", level: 95, icon: "bi-filetype-html" },
-            { name: "CSS3", level: 95, icon: "bi-filetype-css" },
-            { name: "Framer Motion", level: 70, icon: "bi-film" },
+            { name: "Data Structures", level: 85, icon: "bi-diagram-3" },
+            { name: "Algorithms", level: 85, icon: "bi-gear-wide-connected" },
+            { name: "OOP", level: 80, icon: "bi-boxes" },
+            { name: "Concurrency", level: 90, icon: "bi-arrow-repeat" },
+            { name: "SDLC", level: 80, icon: "bi-kanban" },
           ]}
         />
 
         <SkillSection
           title="Backend & Systems"
-          icon="bi-hdd-rack"
-          description="Designing APIs and backend services with scalability in mind."
+          icon="bi-server"
+          description="Designing and implementing modular backend systems with secure APIs, database optimization, and production-grade reliability."
           skills={[
-            { name: "Node.js", level: 85, icon: "bi-hexagon" },
-            { name: "Express", level: 85, icon: "bi-hdd-network" },
-            { name: "Spring Boot", level: 80, icon: "bi-gear-wide-connected" },
-            { name: "REST APIs", level: 90, icon: "bi-cloud-arrow-down" },
-            { name: "PostgreSQL", level: 80, icon: "bi-database-fill" },
+            { name: "Spring Boot", level: 85, icon: "bi-server" },
+            { name: "REST APIs", level: 85, icon: "bi-arrow-left-right" },
+            { name: "PostgreSQL", level: 80, icon: "bi-database" },
+            { name: "Architecture", level: 90, icon: "bi-layers" },
+          ]}
+        />
+
+        <SkillSection
+          title="Databases & Data"
+          icon="bi-database"
+          description="Designing normalized schemas and optimizing SQL queries to ensure data integrity and performance."
+          skills={[
+            { name: "SQL Optimization", level: 90, icon: "bi-speedometer2" },
+            { name: "Normalization", level: 85, icon: "bi-diagram-2" },
+            { name: "Transactions", level: 90, icon: "bi-arrow-repeat" },
+          ]}
+        />
+
+        <SkillSection
+          title="Cloud & DevOps"
+          icon="bi-cloud-arrow-up"
+          description="Containerizing services and deploying cloud-ready systems using Docker and AWS fundamentals."
+          skills={[
+            { name: "Docker", level: 80, icon: "bi-box-seam" },
+            { name: "AWS", level: 70, icon: "bi-cloud" },
+            { name: "CI/CD", level: 75, icon: "bi-arrow-repeat" },
+            { name: "Git", level: 70, icon: "bi-git" },
+          ]}
+        />
+
+        <SkillSection
+          title="Frontend Development"
+          icon="bi-layout-text-window"
+          description="Building modular, reusable UI components with focus on performance and maintainability."
+          skills={[
+            { name: "React", level: 80, icon: "bi-code-slash" },
+            { name: "Next.js", level: 70, icon: "bi-window" },
+            { name: "Responsive UI", level: 75, icon: "bi-phone" },
           ]}
         />
 
         <SkillSection
           title="Data & Machine Learning"
-          icon="bi-graph-up-arrow"
-          description="Working with data pipelines, analytics, and ML fundamentals."
+          icon="bi-bar-chart-line"
+          description="Implementing end-to-end data pipelines and applying ML fundamentals for analytics-driven applications."
           skills={[
-            { name: "Pandas / NumPy", level: 80, icon: "bi-table" },
-            { name: "Scikit-Learn", level: 70, icon: "bi-robot" },
-            { name: "Data Visualization", level: 75, icon: "bi-pie-chart" },
-            { name: "Feature Engineering", level: 70, icon: "bi-sliders" },
-          ]}
-        />
-
-        <SkillSection
-          title="Cloud, DevOps & Tools"
-          icon="bi-tools"
-          description="Tools and platforms used for collaboration and deployment."
-          skills={[
-            { name: "Git", level: 90, icon: "bi-git" },
-            { name: "GitHub", level: 90, icon: "bi-github" },
-            { name: "Docker", level: 75, icon: "bi-box-seam" },
-            { name: "AWS", level: 70, icon: "bi-cloud" },
-            { name: "Postman", level: 85, icon: "bi-send" },
+            { name: "Pandas", level: 80, icon: "bi-table" },
+            { name: "Scikit-Learn", level: 70, icon: "bi-cpu" },
+            { name: "Feature Engineering", level: 75, icon: "bi-sliders" },
           ]}
         />
       </div>
