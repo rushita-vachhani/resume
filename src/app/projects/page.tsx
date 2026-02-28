@@ -7,7 +7,7 @@ export default function Projects() {
       <header className="mb-2 w-full">
         <h1 className="text-4xl font-bold mb-4 text-body-text">Projects</h1>
         <p className="text-text-secondary text-md">
-          A collection of applications and tools I&apos;ve built, demonstrating my journey through full-stack development and problem solving.
+          Systems I&apos;ve architected and built; spanning backend services, data pipelines, and production-ready applications.
         </p>
       </header>
 
