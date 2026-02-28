@@ -30,4 +30,5 @@ export const projectsData: Project[] = [
     description: "Architected a HIPAA-compliant backend platform securing healthcare data for 1,000+ providers. Designed Java and Spring Boot services with role-based access control (RBAC), secure REST APIs, and structured data validation. • Implemented secure authentication and RBAC-based authorization • Reduced production incidents by 30% through structured debugging • Migrated legacy services to modular REST-based architecture • Ensured compliance with federal healthcare data privacy standards",
     skills: ["Java","Spring Boot","REST APIs","RBAC","PostgreSQL","Secure Architecture"]
   },
+  
 ];
