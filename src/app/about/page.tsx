@@ -15,8 +15,7 @@ export default function About() {
             About <span className="text-primary">Me</span>
           </h1>
           <p className="text-2xl text-text-secondary max-w-2xl font-light leading-relaxed">
-            More than just a <span className="font-semibold text-primary">developer</span>. <br/>
-            I&apos;m a storyteller, a problem solver, and a tech enthusiast.
+             <span className="font-semibold text-primary">Backend-focused Software Engineer</span> building secure, scalable Java systems for production SaaS platforms. <br/>
           </p>
         </header>
 
@@ -35,18 +34,14 @@ export default function About() {
               </div>
               
               <h2 className="text-3xl font-bold mb-6 text-body-text flex items-center gap-3 relative z-10">
-                The Journey
+                Engineering Highlights
               </h2>
               
               <div className="prose dark:prose-invert max-w-none text-text-secondary space-y-6 leading-relaxed relative z-10 text-justify">
-                <p>
-                  My fascination with technology began not with code, but with <span className="font-semibold text-primary">curiosity</span>. I wanted to know how things worked behind the screen. That curiosity led me to write my first &quot;Hello World,&quot; and I haven&apos;t looked back since.
-                </p>
-                <p>
-                  From late-night debugging sessions to the thrill of deploying a scalable application, I&apos;ve fallen in love with the process of creation. I see every bug as a puzzle and every project as an opportunity to learn something new.
-                </p>
-                <p>
-                  Today, I&apos;m pursuing my Master&apos;s in Software Engineering, bridging the gap between theoretical concepts and real-world solutions.
+                <p>• Architected HIPAA-compliant backend for 1000+ providers</p>
+                <p>• Reduced production incident resolution time by 30%</p>
+                <p>• Improved database performance through normalization and query optimization</p>
+                <p>• Mentored 50+ students on <span className="font-semibold text-primary">SQL, transactions, and concurrency</span>
                 </p>
               </div>
             </section>
@@ -58,10 +53,10 @@ export default function About() {
               shadow-[inset_10px_10px_20px_var(--shadow-inner-dark),inset_-10px_-10px_20px_var(--shadow-inner-light)]
             ">
               <h2 className="text-2xl font-bold mb-4 text-primary">
-                Why I Code
+                What Drives Me
               </h2>
               <p className="text-text-secondary leading-relaxed italic">
-                &quot;Code is the closest thing we have to magic. It allows us to create something from nothing, to solve problems that affect real people, and to build the future one line at a time.&quot;
+                &quot;I’m motivated by solving complex backend problems where system reliability, data integrity, and scalability matter.&quot;
               </p>
             </section>
           </div>
@@ -71,10 +66,10 @@ export default function About() {
             
             {/* Quick Stats / Highlights */}
             <div className="grid grid-cols-2 gap-6">
-               <HighlightCard icon="bi-mortarboard-fill" label="Master's Student" />
-               <HighlightCard icon="bi-code-slash" label="Full Stack Dev" />
-               <HighlightCard icon="bi-puzzle-fill" label="Problem Solver" />
-               <HighlightCard icon="bi-infinity" label="Lifelong Learner" />
+               <HighlightCard icon="bi-cpu" label="Backend Engineering" />
+               <HighlightCard icon="bi-diagram-3" label="Scalable System Design" />
+               <HighlightCard icon="bi-database" label="Database Performance Optimization" />
+               <HighlightCard icon="bi-shield-lock" label="Secure API Development" />
             </div>
 
             {/* Beyond the Code */}

@@ -65,28 +65,28 @@ export default function Home() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-10">
         <ServiceCard
-          title="Full-Stack Development"
-          description="Building scalable web applications using React, React Native, Flutter, TypeScript, Node.js, Java, Spring Boot, Kotlin, Swift, Dart and REST APIs."
-        />
-        <ServiceCard
           title="Backend & Systems"
-          description="Designing robust backend services, data pipelines, and cloud-ready architectures."
+          description="Architected scalable REST APIs using Java 17 & Spring Boot. Applied database optimization, RBAC security, and structured exception handling to deliver production-grade reliability."
         />
         <ServiceCard
-          title="Data & Machine Learning"
-          description="Hands-on experience with Python, ML models, feature engineering, and analytics workflows."
+          title="System Design & Scalable Architecture"
+          description="Designed modular client–server architectures using layered design principles, RBAC authorization, and RESTful contracts to support secure, scalable SaaS platforms."
         />
         <ServiceCard
-          title="Cloud & DevOps"
-          description="Exposure to Docker, Kubernetes, AWS, CI/CD pipelines, and system monitoring."
+          title="Databases & Data Engineering"
+          description="Optimized relational database schemas and SQL queries for performance and data integrity, applying normalization, indexing strategies, and transaction isolation principles in PostgreSQL-based systems."
         />
         <ServiceCard
-          title="UI / UX Engineering"
-          description="Translating designs into responsive, accessible, and performance-optimized user interfaces."
+          title="Data Structures & Algorithmic Foundations"
+          description="Strong foundation in Data Structures & Algorithms, applying complexity analysis, recursion, and modular OOP design to build efficient and maintainable systems."
         />
         <ServiceCard
-          title="Research & Prototyping"
-          description="Rapid prototyping, experimentation, debugging, and performance optimization."
+          title="Production Engineering & Reliability"
+          description="Improved production stability by debugging API failures, enforcing structured logging, and applying root-cause analysis to reduce incident resolution time by 30%."
+        />
+        <ServiceCard
+          title="Cloud & DevOps Exposure"
+          description="Deployed and containerized services using Docker and AWS fundamentals, understanding CI/CD workflows and cloud-ready service design for production environments."
         />
       </div>
     </div>
