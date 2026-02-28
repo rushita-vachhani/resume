@@ -2,6 +2,10 @@ import { Project } from "@/data/projects";
 import Link from "next/link";
 
 export default function ProjectCard({ project }: { project: Project }) {
+  const parts = project.description.split("•");
+  const summary = parts[0].trim();
+  const bullets = parts.slice(1).map((s) => s.trim()).filter((s) => s);
+
   return (
     <article
       className="
@@ -18,9 +22,21 @@ export default function ProjectCard({ project }: { project: Project }) {
         <h3 className="text-2xl font-bold text-primary mb-2">
           {project.title}
         </h3>
-        <p className="text-text-secondary leading-relaxed text-sm text-justify">
-          {project.description}
-        </p>
+        {summary && (
+          <p className="text-text-secondary leading-relaxed text-sm text-justify mb-3">
+            {summary}
+          </p>
+        )}
+        {bullets.length > 0 && (
+          <ul className="space-y-2">
+            {bullets.map((bullet, index) => (
+              <li key={index} className="flex items-start text-sm text-text-secondary text-justify">
+                <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary mt-1.5 mr-2 flex-shrink-0"></span>
+                <span className="leading-relaxed">{bullet}</span>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
 
       {/* Skills - Inset Look */}
