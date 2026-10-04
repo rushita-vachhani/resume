@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -20,12 +19,12 @@ export default function Home() {
           </h1>
 
           <p className="mt-4 text-text-secondary text-lg leading-relaxed">
-            Master’s candidate in <strong>Computer Software Engineering (GPA 3.94)</strong> with 5+ years of industry experience building scalable SaaS applications and backend systems using Java, Spring Boot, and Hibernate. Strong foundation in Data Structures, OOP, RESTful API development, and distributed systems, with hands-on experience architecting HIPAA-compliant, production-grade applications. Proven ability to design, optimize, and debug high-performance client-server architectures while collaborating in Agile environments. Passionate about backend engineering, system design, and building secure, reliable, and scalable Java-based services that drive measurable product impact.
+            I’m a software engineer with 5+ years of industry experience across backend services, web applications, and mobile products, currently completing an internship at SAP. My work spans Java, Spring Boot, Node.js, and TypeScript, with a focus on reliable APIs, database performance, and maintainable software. At SAP, I’m building full-stack audit capabilities that help teams track changes and safely manage updates. I’m pursuing an M.S. in Computer Software Engineering at Northeastern University, with expected graduation in April 2027. 
           </p>
 
-          {/* <p className="mt-2 text-text-secondary text-lg">
-            Actively seeking <span className="text-primary font-semibold">Software Engineering / Data / ML Internships</span>.
-          </p> */}
+          <p className="mt-2 text-text-secondary text-lg">
+             <span className="text-primary font-semibold">Software Engineer · Full-Stack (Backend + Frontend) · Graduating April 2027</span>.
+          </p>
 
           <Link
             href="/experience"
@@ -51,42 +50,44 @@ export default function Home() {
       </div>
 
       {/* METRICS */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 mb-16">
-        <Metric title="Years of Experience" value="5+" />
-        <Metric title="Academic & Industry Projects" value="10+" />
-        <Metric title="Technologies Used" value="5+" />
-        <Metric title="Hackathons & Awards" value="3" />
-      </div>
+      <section aria-label="Career at a glance" className="my-12">
+        <dl className="grid grid-cols-1 gap-5 min-[600px]:grid-cols-2 min-[1280px]:grid-cols-4">
+          <Metric title="Years of Experience" value="5+" icon="briefcase" />
+          <Metric title="Current Internship" value="SAP" icon="building" />
+          <Metric title="Expected M.S. Graduation" value="Apr 2027" icon="mortarboard" />
+          <Metric title="Engineering Focus" value="Full-Stack & Backend" icon="code-slash" compact />
+        </dl>
+      </section>
 
       {/* SERVICES / FOCUS AREAS */}
       <h2 className="text-2xl font-bold mt-12 mb-8 text-body-text">
-        What I Work On
+        Engineering Expertise
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-10">
         <ServiceCard
-          title="Backend & Systems"
-          description="Architected scalable REST APIs using Java 17 & Spring Boot. Applied database optimization, RBAC security, and structured exception handling to deliver production-grade reliability."
+          title="Backend Engineering & APIs"
+          description="I build backend services and REST APIs using Java, Spring Boot, and Node.js. My experience includes healthcare platform development, role-based access control, and modernizing legacy services into modular components."
         />
         <ServiceCard
-          title="System Design & Scalable Architecture"
-          description="Designed modular client–server architectures using layered design principles, RBAC authorization, and RESTful contracts to support secure, scalable SaaS platforms."
+          title="Full-Stack Web Development"
+          description="At SAP, I develop audit features using Nuxt 3, NestJS, and TypeScript. My work includes change tracking, readable change histories, server-side search, pagination, and reusable UI components."
         />
         <ServiceCard
-          title="Databases & Data Engineering"
-          description="Optimized relational database schemas and SQL queries for performance and data integrity, applying normalization, indexing strategies, and transaction isolation principles in PostgreSQL-based systems."
+          title="Databases & Data Integrity"
+          description="I work with relational database design, SQL, indexing, and transaction behavior. As a database teaching assistant at Northeastern, I reviewed student schemas and queries and helped diagnose concurrency issues."
         />
         <ServiceCard
-          title="Data Structures & Algorithmic Foundations"
-          description="Strong foundation in Data Structures & Algorithms, applying complexity analysis, recursion, and modular OOP design to build efficient and maintainable systems."
+          title="Software Design & Maintainability"
+          description="I design modular services and reusable components with clear responsibilities. My work includes backend modernization and consolidating multiple SAP audit views into a shared component for consistent behavior and easier maintenance."
         />
         <ServiceCard
-          title="Production Engineering & Reliability"
-          description="Improved production stability by debugging API failures, enforcing structured logging, and applying root-cause analysis to reduce incident resolution time by 30%."
+          title="Production Reliability & Security"
+          description="I troubleshoot API failures and improve monitoring and logging. My experience includes reducing production incidents in a healthcare platform and implementing optimistic locking, input validation, and controlled field updates at SAP."
         />
         <ServiceCard
-          title="Cloud & DevOps Exposure"
-          description="Deployed and containerized services using Docker and AWS fundamentals, understanding CI/CD workflows and cloud-ready service design for production environments."
+          title="Mobile Application Development"
+          description="I develop Android, iOS, and React Native applications, with experience on products including KukuFM. My work includes third-party integrations, crash monitoring, analytics, and notifications to support application stability."
         />
       </div>
     </div>
@@ -95,19 +96,23 @@ export default function Home() {
 
 /* ---------- Components ---------- */
 
-function Metric({ title, value }: { title: string; value: string }) {
+function Metric({ title, value, icon, compact = false }: {
+  title: string;
+  value: string;
+  icon: string;
+  compact?: boolean;
+}) {
   return (
-    <div className="text-center">
-      <div
-        className="
-          w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center
-          bg-body-bg
-          shadow-[inset_5px_5px_10px_var(--shadow-inner-dark),inset_-5px_-5px_10px_var(--shadow-inner-light)]
-        "
-      >
-        <h3 className="text-3xl font-bold text-primary">{value}</h3>
-      </div>
-      <p className="text-text-secondary text-sm font-medium">{title}</p>
+    <div className="flex min-w-0 flex-col rounded-3xl border border-sidebar-border bg-body-bg p-6 shadow-[8px_8px_20px_var(--shadow-outer-dark),_-8px_-8px_20px_var(--shadow-outer-light)]">
+      <dt className="flex min-h-10 items-center gap-3 text-sm font-medium leading-5 text-text-secondary">
+        <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-lg text-body-text dark:text-primary" aria-hidden="true">
+          <i className={`bi bi-${icon}`} />
+        </span>
+        <span>{title}</span>
+      </dt>
+      <dd className={`mt-5 flex min-h-16 items-center font-bold tracking-tight text-body-text dark:text-primary ${compact ? "text-2xl leading-8" : "text-4xl leading-tight tabular-nums"}`}>
+        {value}
+      </dd>
     </div>
   );
 }
