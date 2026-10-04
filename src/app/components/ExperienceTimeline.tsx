@@ -50,9 +50,11 @@ function TimelineItem({ data, index }: { data: Experience; index: number }) {
           <h4 className="text-md font-semibold text-text-secondary mb-3">
             {data.company}
           </h4>
-          <p className="text-text-muted text-sm leading-relaxed mb-4">
-            {data.description}
-          </p>
+          <ul className="mb-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-text-secondary marker:text-primary">
+            {data.description.map((point) => (
+              <li key={point} className="pl-1">{point}</li>
+            ))}
+          </ul>
 
           <div className="flex flex-wrap gap-2">
             {data.skills.map((skill) => (

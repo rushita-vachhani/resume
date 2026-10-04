@@ -42,7 +42,7 @@ export default function SidebarRight() {
           {pathname === "/"
             ? "HOME"
             : pathname.startsWith("/experience")
-            ? "EXPERIENCE"
+            ? "EXPERIENCE & TIMELINE"
             : pathname.split("/")[1].toUpperCase()}
         </p>
       </aside>

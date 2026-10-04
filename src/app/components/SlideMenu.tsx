@@ -14,7 +14,7 @@ export default function SlideMenu({ close }: { close: () => void }) {
 
       <nav className="px-6 space-y-4 text-lg">
         <MenuItem href="/" label="Home" close={close} />
-        <MenuItem href="/experience" label="Experience" close={close} />
+        <MenuItem href="/experience" label="Experience & Timeline" close={close} />
         <MenuItem href="/projects" label="Projects" close={close} />
         <MenuItem href="/skills" label="Skills" close={close} />
         <MenuItem href="/education" label="Education" close={close} />
