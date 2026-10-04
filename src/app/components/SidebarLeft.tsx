@@ -24,16 +24,16 @@ export default function SidebarLeft() {
           Rushitaben Vachhani
         </h2>
         <p className="text-text-secondary text-sm text-center mt-2">
-          Software Engineering Student
+          Software Engineer | Backend & Full-Stack
         </p>
         
       </div>
 
       {/* Basic Info */}
       <div className="mt-1 space-y-1 text-xs">
-        <Info label="Program" value="Masters of Science" />
-        <Info label="University" value="Northeastern University" />
-        <Info label="Location" value="Boston, MA, United States" />
+        <Info label="Program" value="Current Intern at SAP" />
+        <Info label="University" value="M.S. Computer Software Engineering" />
+        <Info label="Location" value="Northeastern University &nbsp;&nbsp; Expected Apr 2027" />
       </div>
 
       <div className="my-4 h-0.5 rounded-full bg-body-bg shadow-[inset_2px_2px_4px_var(--shadow-inner-dark),inset_-2px_-2px_4px_var(--shadow-inner-light)]" />
