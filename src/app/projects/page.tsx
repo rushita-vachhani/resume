@@ -5,9 +5,9 @@ export default function Projects() {
   return (
     <div className="section-container">
       <header className="mb-2 w-full">
-        <h1 className="text-4xl font-bold mb-4 text-body-text">Projects</h1>
+        <h1 className="text-4xl font-bold mb-4 text-body-text">Recent Projects</h1>
         <p className="text-text-secondary text-md">
-          Systems I&apos;ve architected and built; spanning backend services, data pipelines, and production-ready applications.
+          Selected academic and professional projects across full-stack development, backend services, database systems, and machine learning.
         </p>
       </header>
 
