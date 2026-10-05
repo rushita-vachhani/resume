@@ -12,10 +12,10 @@ export default function About() {
         {/* Creative Header */}
         <header className="mb-2 text-center md:text-left">
           <h1 className="text-5xl md:text-7xl font-black mb-6 text-body-text tracking-tight">
-            About <span className="text-primary">Me</span>
+            About & <span className="text-primary">Contact</span>
           </h1>
           <p className="text-2xl text-text-secondary max-w-2xl font-light leading-relaxed">
-             <span className="font-semibold text-primary">Backend-focused Software Engineer</span> building secure, scalable Java systems for production SaaS platforms. <br/>
+             I&apos;m a software engineer with experience across backend services, web applications, and mobile products. Currently <span className="font-semibold text-primary">interning at SAP and pursuing my master&apos;s</span>  at Northeastern University, I&apos;m interested in building reliable software and contributing across the stack. <br/>
           </p>
         </header>
 
@@ -34,15 +34,14 @@ export default function About() {
               </div>
               
               <h2 className="text-3xl font-bold mb-6 text-body-text flex items-center gap-3 relative z-10">
-                Engineering Highlights
+                Experience at a Glance
               </h2>
               
               <div className="prose dark:prose-invert max-w-none text-text-secondary space-y-6 leading-relaxed relative z-10 text-justify">
-                <p>• Architected HIPAA-compliant backend for 1000+ providers</p>
-                <p>• Reduced production incident resolution time by 30%</p>
-                <p>• Improved database performance through normalization and query optimization</p>
-                <p>• Mentored 50+ students on <span className="font-semibold text-primary">SQL, transactions, and concurrency</span>
-                </p>
+                <p><span className="font-semibold text-primary">•&nbsp;SAP:</span> Developing full-stack audit features with Nuxt 3, NestJS, and TypeScript.</p>
+                <p><span className="font-semibold text-primary">•&nbsp;Healthcare software:</span> Built Java and Spring Boot services with role-based access control and production monitoring.</p>
+                <p><span className="font-semibold text-primary">•&nbsp;Mobile products:</span> Developed Android, iOS, and React Native applications.</p>
+                <p><span className="font-semibold text-primary">•&nbsp;Teaching:</span> Mentored 25+ students in database design, SQL, and concurrency concepts.</p>
               </div>
             </section>
 
@@ -56,7 +55,7 @@ export default function About() {
                 What Drives Me
               </h2>
               <p className="text-text-secondary leading-relaxed italic">
-                &quot;I’m motivated by solving complex backend problems where system reliability, data integrity, and scalability matter.&quot;
+                I enjoy turning complex requirements into practical, maintainable software. I’m especially interested in backend and full-stack work where clear design, reliable data handling, and a thoughtful user experience come together.
               </p>
             </section>
           </div>
@@ -66,10 +65,10 @@ export default function About() {
             
             {/* Quick Stats / Highlights */}
             <div className="grid grid-cols-2 gap-6">
-               <HighlightCard icon="bi-cpu" label="Backend Engineering" />
-               <HighlightCard icon="bi-diagram-3" label="Scalable System Design" />
-               <HighlightCard icon="bi-database" label="Database Performance Optimization" />
-               <HighlightCard icon="bi-shield-lock" label="Secure API Development" />
+               <HighlightCard icon="bi-cpu" label="Backend & API Development" />
+               <HighlightCard icon="bi-diagram-3" label="Full-Stack Web Development" />
+               <HighlightCard icon="bi-database" label="Database Design & Concurrency" />
+               <HighlightCard icon="bi-shield-lock" label="Software Reliability & Maintainability" />
             </div>
 
             {/* Beyond the Code */}
@@ -94,9 +93,9 @@ export default function About() {
               border-2 border-primary/10
               shadow-[20px_20px_60px_var(--shadow-outer-dark),_-20px_-20px_60px_var(--shadow-outer-light)]
             ">
-               <h3 className="font-bold mb-2 text-lg text-body-text">Let&apos;s Create Together</h3>
+               <h3 className="font-bold mb-2 text-lg text-body-text">Let&apos;s Connect</h3>
                <p className="text-sm text-text-secondary mb-6">
-                 Open to internships and collaborative projects.
+                 I’m interested in backend and full-stack opportunities in the U.S. following my expected graduation in April 2027. Based in Texas and open to relocation.
                </p>
                <a 
                  href="https://docs.google.com/document/d/1srg1XYpJQfZqMBG7pg0iG4KK1oHeYLFJRpb6MvhTckY/edit?usp=sharing"
