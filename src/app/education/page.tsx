@@ -9,7 +9,7 @@ export default function EducationPage() {
           Education
         </h1>
         <p className="text-text-secondary text-md">
-          My academic journey reflects a continuous process of learning, exploration, and applying theory to real-world software systems.
+          Academic preparation in software engineering, algorithms, database systems, and application development.
         </p>
       </header>
 
