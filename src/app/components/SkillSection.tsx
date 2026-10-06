@@ -31,7 +31,7 @@ export default function SkillSection({
     >
       <header className="mb-6">
         <h2 className="text-2xl font-bold text-primary flex items-center gap-3">
-          {icon && <i className={`bi ${icon} text-body-text opacity-80`}></i>}
+          {icon && <i aria-hidden="true" className={`bi ${icon} text-body-text opacity-80`}></i>}
           {title}
         </h2>
         {description && (

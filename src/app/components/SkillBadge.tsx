@@ -18,7 +18,7 @@ export default function SkillBadge({ name, icon }: SkillBadgeProps) {
         transition-all duration-300 cursor-default select-none
       "
     >
-      <i className={`bi ${icon || "bi-code-slash"} text-lg text-primary group-hover:scale-110 transition-transform duration-300`}></i>
+      <i aria-hidden="true" className={`bi ${icon || "bi-code-slash"} text-lg text-primary group-hover:scale-110 transition-transform duration-300`}></i>
       
       <span className="font-semibold text-xs text-text-secondary group-hover:text-body-text transition-colors">
         {name}
