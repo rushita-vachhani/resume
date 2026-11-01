@@ -2,7 +2,7 @@ import SkillBadge from "./SkillBadge";
 
 type Skill = {
   name: string;
-  level: number;
+  level?: number;
   icon?: string;
 };
 

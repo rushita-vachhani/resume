@@ -1,3 +1,4 @@
+import { contact } from "../../data/contact";
 import React from 'react';
 import AnimatedBackground from '../components/AnimatedBackground';
 
@@ -38,7 +39,7 @@ export default function About() {
               </h2>
               
               <div className="prose dark:prose-invert max-w-none text-text-secondary space-y-6 leading-relaxed relative z-10 text-justify">
-                <p><span className="font-semibold text-primary">•&nbsp;SAP:</span> Developing full-stack audit features with Nuxt 3, NestJS, and TypeScript.</p>
+                <p><span className="font-semibold text-primary">•&nbsp;SAP:</span> Building enterprise live streaming, real-time collaboration, and secure full-stack services with AWS, Nuxt 3, and NestJS.</p>
                 <p><span className="font-semibold text-primary">•&nbsp;Healthcare software:</span> Built Java and Spring Boot services with role-based access control and production monitoring.</p>
                 <p><span className="font-semibold text-primary">•&nbsp;Mobile products:</span> Developed Android, iOS, and React Native applications.</p>
                 <p><span className="font-semibold text-primary">•&nbsp;Teaching:</span> Mentored 25+ students in database design, SQL, and concurrency concepts.</p>
@@ -95,10 +96,17 @@ export default function About() {
             ">
                <h3 className="font-bold mb-2 text-lg text-body-text">Let&apos;s Connect</h3>
                <p className="text-sm text-text-secondary mb-6">
-                 I’m interested in backend and full-stack opportunities in the U.S. following my expected graduation in April 2027. Based in Texas and open to relocation.
+                 I’m interested in backend and full-stack opportunities in the U.S. following my expected graduation in April 2027. Based in Newtown Square, PA and open to relocation.
                </p>
+               <a
+                 href={`mailto:${contact.email}`}
+                 className="mb-6 block break-all font-semibold text-primary hover:underline"
+               >
+                 {contact.email}
+               </a>
                <a 
-                 href="https://docs.google.com/document/d/1srg1XYpJQfZqMBG7pg0iG4KK1oHeYLFJRpb6MvhTckY/edit?usp=sharing"
+                 href={contact.resumeUrl}
+                 download
                  target="_blank"
                  rel="noopener noreferrer"
                  className="

@@ -16,12 +16,12 @@ export default function EducationTimeline() {
           title="Master of Science in Computer Software Engineering"
           institution="Northeastern University, Boston, MA"
           gpa="3.95"
-          description="Relevant coursework: Data Science Engineering Methods (A+), Program Structure & Algorithms (A+), Data Management and Database Design (A+), Web Design/User Experience Engineering (A+), User Experience Design/Testing (A+), Concpts of Object-Oriented Design (A+), Career Managmnt for Engineers (A+), Operating Systems (A+)"
+          description="Relevant coursework: Data Science Engineering Methods (A+), Program Structure & Algorithms (A+), Data Management and Database Design (A+), Web Design/User Experience Engineering (A+), User Experience Design/Testing (A+), Concepts of Object-Oriented Design (A+), Career Management for Engineers (A+), Operating Systems (A+)"
         />
 
         <EducationItem
           year="2016 – 2019"
-          title="Bachelor of Computer Applications (BCA) - Gold Medalist"
+          title="Bachelor of Computer Science - Gold Medalist"
           institution="GLS University"
           gpa="3.88"
           description="Relevant coursework: Data Structures (A+), Database Management Systems (A+), Advanced Java (A+), Data Communication & Networks (A+)"

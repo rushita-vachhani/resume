@@ -26,7 +26,7 @@ export const projectsData: Project[] = [
   },
  {
     title: "Customer Churn Prediction - ML Pipeline",
-    description: "Developed a churn prediction pipeline using Python and scikit-learn on 7,000+ customer records, focusing on preprocessing, leakage prevention, and model evaluation. • Trained and compared Logistic Regression and Random Forest models. • Trained and compared Logistic Regression and Random Forest models. • Built preprocessing and feature-engineering workflows to prevent data leakage. • Evaluated precision-recall tradeoffs to select a decision threshold for identifying customers at risk of churn.",
+    description: "Developed a churn prediction pipeline using Python and scikit-learn on 7,000+ customer records, focusing on preprocessing, leakage prevention, and model evaluation. • Trained and compared Logistic Regression and Random Forest models. • Built preprocessing and feature-engineering workflows to prevent data leakage. • Evaluated precision-recall tradeoffs to select a decision threshold for identifying customers at risk of churn.",
     skills: ["Python","scikit-learn","SQL"],
     gitUrl: "https://github.com/rushita-vachhani/customer-churn-ml-pipeline.git"
   },

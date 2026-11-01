@@ -19,7 +19,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-4 text-text-secondary text-lg leading-relaxed">
-            I’m a software engineer with 5+ years of industry experience across backend services, web applications, and mobile products, currently completing an internship at SAP. My work spans Java, Spring Boot, Node.js, and TypeScript, with a focus on reliable APIs, database performance, and maintainable software. At SAP, I’m building full-stack audit capabilities that help teams track changes and safely manage updates. I’m pursuing an M.S. in Computer Software Engineering at Northeastern University, with expected graduation in April 2027. 
+            I’m a software engineer with 5+ years of industry experience across backend services, web applications, and mobile products, currently completing an internship at SAP. My work spans Java, Spring Boot, Node.js, and TypeScript, with a focus on reliable APIs, database performance, and maintainable software. At SAP, I’m building enterprise live streaming and real-time collaboration infrastructure, migrating services across Kubernetes clusters in three regions, and strengthening security and CI/CD. I’m pursuing an M.S. in Computer Software Engineering at Northeastern University, with expected graduation in April 2027.
           </p>
 
           <p className="mt-2 text-text-secondary text-lg">
@@ -71,7 +71,7 @@ export default function Home() {
         />
         <ServiceCard
           title="Full-Stack Web Development"
-          description="At SAP, I develop audit features using Nuxt 3, NestJS, and TypeScript. My work includes change tracking, readable change histories, server-side search, pagination, and reusable UI components."
+          description="At SAP, I build enterprise streaming and collaboration features using Nuxt 3, NestJS, and TypeScript, with Socket.IO and Redis Pub/Sub supporting live Q&A, polls, and slide synchronization."
         />
         <ServiceCard
           title="Databases & Data Integrity"
@@ -79,7 +79,7 @@ export default function Home() {
         />
         <ServiceCard
           title="Software Design & Maintainability"
-          description="I design modular services and reusable components with clear responsibilities. My work includes backend modernization and consolidating multiple SAP audit views into a shared component for consistent behavior and easier maintenance."
+          description="I design modular services and reusable components with clear responsibilities. My work includes backend modernization, microservices, and migrating a monolith to a NestJS and Nuxt 3 monorepo deployed across Kubernetes clusters in three regions."
         />
         <ServiceCard
           title="Production Reliability & Security"

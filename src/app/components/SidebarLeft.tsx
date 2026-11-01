@@ -1,5 +1,7 @@
 "use client";
 
+import { contact } from "../../data/contact";
+
 import Image from "next/image";
 import LanguageCircle from "./LanguageCircle";
 
@@ -58,7 +60,8 @@ export default function SidebarLeft() {
 
       {/* Resume */}
       <a
-        href="https://docs.google.com/document/d/1srg1XYpJQfZqMBG7pg0iG4KK1oHeYLFJRpb6MvhTckY/edit?usp=sharing"
+        href={contact.resumeUrl}
+        download
         target="_blank"
         rel="noopener noreferrer"
         className="mt-1 px-6 py-1 rounded-full text-primary font-bold flex items-center justify-center gap-3 uppercase tracking-wider text-sm bg-body-bg shadow-[6px_6px_12px_var(--shadow-outer-dark),-6px_-6px_12px_var(--shadow-outer-light)] hover:shadow-[inset_4px_4px_8px_var(--shadow-inner-dark),inset_-4px_-4px_8px_var(--shadow-inner-light)] active:scale-95 transition-all duration-300"
@@ -69,6 +72,7 @@ export default function SidebarLeft() {
       {/* Social Links */}
       <div className="mt-auto flex gap-6 justify-center pt-10 pb-4">
         <SocialButton href="https://www.linkedin.com/in/rushita-vachhani" icon="bi-linkedin" label="LinkedIn" />
+        <SocialButton href={`mailto:${contact.email}`} icon="bi-envelope" label="Email" />
         <SocialButton href="https://github.com/rushita-vachhani" icon="bi-github" label="GitHub" />
       </div>
     </aside>

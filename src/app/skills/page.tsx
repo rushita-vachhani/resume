@@ -94,9 +94,9 @@ export default function SkillsPage() {
         />
 
         <SkillSection
-          title="Development Tools & Cloud Fundamentals"
+          title="Development Tools"
           icon="bi-tools"
-          description="Development tools and foundational cloud knowledge supporting coursework and software projects."
+          description="Tools supporting application development, delivery, and software projects."
           skills={[
             { name: "Git", level: 80, icon: "bi-git" },
             { name: "Linux", level: 70, icon: "bi-terminal" },
@@ -117,6 +117,24 @@ export default function SkillsPage() {
             { name: "Feature Engineering", level: 75, icon: "bi-sliders" },
             { name: "Model Evaluation", level: 75, icon: "bi-clipboard-check" },
           ]}
+        />
+        <SkillSection
+          title="Distributed Systems & Streaming"
+          icon="bi-broadcast"
+          description="Enterprise streaming and real-time collaboration infrastructure at SAP."
+          skills={[{"name": "Microservices"}, {"name": "Event-Driven Architecture"}, {"name": "Kafka"}, {"name": "Socket.IO"}, {"name": "Redis Pub/Sub"}, {"name": "WebRTC"}, {"name": "AWS MediaConnect"}, {"name": "AWS MediaLive"}, {"name": "AWS MediaPackage"}, {"name": "CloudFront"}, {"name": "AWS CDK"}]}
+        />
+        <SkillSection
+          title="Cloud & DevOps"
+          icon="bi-cloud"
+          description="Multi-region deployments, automated delivery, and cloud infrastructure."
+          skills={[{"name": "Azure AKS"}, {"name": "Azure ACR"}, {"name": "Azure Cosmos DB"}, {"name": "Kubernetes"}, {"name": "OpenShift"}, {"name": "Helm"}, {"name": "Jenkins"}, {"name": "GitHub Actions"}, {"name": "SAP Piper"}, {"name": "HashiCorp Vault"}, {"name": "Kaniko"}]}
+        />
+        <SkillSection
+          title="Security & Observability"
+          icon="bi-shield-lock"
+          description="Authentication, secure application workflows, and production monitoring."
+          skills={[{"name": "SAML2"}, {"name": "OIDC"}, {"name": "MSAL"}, {"name": "JWT"}, {"name": "Spring Security"}, {"name": "XSS/CSRF Mitigation"}, {"name": "PII Encryption"}, {"name": "ClamAV"}, {"name": "Splunk"}, {"name": "Datadog"}, {"name": "Fortify"}, {"name": "NexusIQ"}, {"name": "SonarQube"}]}
         />
       </div>
     </div>
